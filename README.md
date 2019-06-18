@@ -1,2 +1,2 @@
 # coding_template
-Coding template
+CTD Coding template
