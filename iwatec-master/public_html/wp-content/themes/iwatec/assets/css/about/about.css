@@ -1,0 +1,223 @@
+.l-sidenav {
+  width: 150px; }
+
+.l-sidenav-content {
+  width: 1030px; }
+
+.p-sidenav-list li + li {
+  margin-top: 30px; }
+
+/* MESSAGE BEGIN */
+.p-message {
+  position: relative; }
+
+.p-message-txt {
+  position: absolute;
+  z-index: 1;
+  left: 80px;
+  bottom: 100px; }
+
+.p-message-sign {
+  font-size: 1.8rem;
+  letter-spacing: 0.08em; }
+
+/* MESSAGE END */
+/* PROFILE BEGIN */
+.p-profile-table {
+  width: 100%; }
+  .p-profile-table tr th, .p-profile-table tr td {
+    border-top: 1px solid #e2e2e2;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .p-profile-table tr th {
+    text-align: left;
+    width: 150px;
+    padding-left: 15px;
+    font-weight: 500; }
+  .p-profile-table tr .m-btn a {
+    padding: 5px 20px; }
+  .p-profile-table tr .half {
+    display: flex; }
+  .p-profile-table tr .half-item + .half-item {
+    margin-left: 80px; }
+
+.p-profile-table-en tr th {
+  width: 165px; }
+
+/* PROFILE END */
+/* HISTORY BEGIN */
+.p-history {
+  width: 670px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.p-history-item {
+  display: flex; }
+  .p-history-item:not(:last-child) .p-history-year:before {
+    width: 3px;
+    height: 100%;
+    top: 20px;
+    left: 0; }
+
+.p-history-year,
+.p-history-content {
+  padding-bottom: 40px; }
+
+.p-history-year {
+  position: relative;
+  width: 170px;
+  padding-left: 30px; }
+  .p-history-year:before, .p-history-year:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-color: #d4eddd; }
+  .p-history-year:after {
+    top: 15px;
+    left: -6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; }
+
+.p-history-year-title {
+  font-size: 2.6rem;
+  letter-spacing: 0.05em;
+  color: #639274;
+  font-weight: 500; }
+
+.p-history-year-sub {
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: #42875b; }
+
+.p-history-content {
+  width: 500px;
+  line-height: 1.625; }
+
+/* HISTORY END */
+/* CSR BEGIN */
+.p-csr {
+  font-size: 0; }
+  .p-csr li {
+    text-align: center;
+    display: inline-block;
+    width: 45%; }
+    .p-csr li:nth-child(even) {
+      margin-left: 5%; }
+    .p-csr li:nth-child(n+3) {
+      margin-top: 40px; }
+
+.p-csr-txt {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  margin-top: 10px; }
+
+/* CSR END */
+@media screen and (max-width: 767px) {
+  .l-sidenav {
+    position: relative !important; }
+
+  .p-sidenav-list {
+    font-size: 0; }
+    .p-sidenav-list li {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+      border-left: 1px solid #e2e2e2; }
+      .p-sidenav-list li:nth-child(n+4) {
+        margin-top: 4vw; }
+      .p-sidenav-list li:nth-child(3n), .p-sidenav-list li:last-child {
+        border-right: 1px solid #e2e2e2; }
+      .p-sidenav-list li + li {
+        margin-top: 0; }
+
+  .l-sidenav-content {
+    margin-top: 8vw; }
+
+  .l-sidenav-title {
+    font-size: 4.53333vw; }
+
+  /* MESSAGE BEGIN */
+  .p-message-txt {
+    position: absolute;
+    left: 5vw;
+    top: 9vw;
+    bottom: auto; }
+
+  .p-message-sign {
+    font-size: 4vw; }
+
+  /* MESSAGE END */
+  /* PROFILE BEGIN */
+  .p-profile-table {
+    width: 100%; }
+    .p-profile-table tr th, .p-profile-table tr td {
+      border-top: none;
+      padding: 3vw;
+      display: block;
+      width: 100%; }
+    .p-profile-table tr th {
+      background-color: #f0efef; }
+    .p-profile-table tr .m-btn {
+      margin-bottom: 5vw; }
+      .p-profile-table tr .m-btn a {
+        display: block;
+        padding: 2vw; }
+    .p-profile-table tr .half {
+      display: block; }
+    .p-profile-table tr .half-item + .half-item {
+      margin-left: 0;
+      margin-top: 3vw;
+      margin-bottom: 5vw; }
+
+  /* PROFILE END */
+  /* HISTORY BEGIN */
+  .p-history {
+    width: 94%; }
+
+  .p-history-item:not(:last-child) .p-history-year:before {
+    width: 2px;
+    top: 3vw; }
+
+  .p-history-year,
+  .p-history-content {
+    padding-bottom: 5vw; }
+
+  .p-history-year {
+    width: 30%;
+    padding-left: 4vw; }
+    .p-history-year:after {
+      top: 2vw;
+      left: -1.3vw;
+      width: 3vw;
+      height: 3vw; }
+
+  .p-history-year-title {
+    font-size: 5.06667vw; }
+
+  .p-history-year-sub {
+    font-size: 2.93333vw; }
+
+  .p-history-content {
+    width: 70%;
+    font-size: 3.46667vw; }
+
+  /* HISTORY END */
+  /* CSR BEGIN */
+  .p-csr {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto; }
+    .p-csr li {
+      display: block;
+      width: 100%; }
+      .p-csr li:nth-child(even) {
+        margin-left: 0; }
+      .p-csr li + li, .p-csr li:nth-child(n+3) {
+        margin-top: 6vw; }
+
+  .p-csr-txt {
+    font-size: 4.53333vw;
+    margin-top: 2vw; }
+
+  /* CSR END */ }

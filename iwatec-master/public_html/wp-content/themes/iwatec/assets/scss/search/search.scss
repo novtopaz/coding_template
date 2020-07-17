@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@import '../common/config';
+
+.l-pageBody{
+	padding-top: 20px;
+}
+
+.l-breadcrumbs{
+	margin-top: 0;
+}
+
+.p-lead{
+	margin-top: 10px;
+
+	span{
+		font-weight: bold;
+	}
+}
+
+.p-search-list{
+	margin: 50px 0;
+
+	li{
+		padding-top: 25px;
+		border-top: 1px solid #ccc;
+		&+li{
+			margin-top: 25px;
+		}
+
+		strong{
+			font-weight: bold;
+		}
+	}
+}
+
+.p-search-list-ttle{
+	margin-bottom: 5px;
+}
+
+.p-search-list-link{
+	margin-top: 10px;
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	
+}

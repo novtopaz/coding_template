@@ -1,0 +1,479 @@
+/* BUSINESS BEGIN */
+.p-business li {
+  padding-top: 25px; }
+  .p-business li + li {
+    margin-top: 45px;
+    border-top: 1px solid #b2b2b2; }
+
+.p-business-img {
+  width: 350px; }
+
+.p-business-content {
+  width: 630px; }
+
+.p-business-right {
+  float: right;
+  text-align: right; }
+
+.p-business-left {
+  float: left; }
+
+.p-business-title {
+  font-size: 2.2rem;
+  letter-spacing: 0.08em;
+  color: #ff4e00;
+  font-weight: 500;
+  margin-bottom: 15px; }
+
+.p-business-btn a {
+  padding: 12px 40px 12px 30px; }
+  .p-business-btn a span {
+    padding-right: 55px; }
+
+.p-business-img-inner {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  /* this fixes the overflow:hidden in Chrome/Opera */ }
+
+.p-business-deco {
+  position: absolute;
+  z-index: 1;
+  animation-iteration-count: infinite; }
+
+.p-geotherma-deco4 {
+  bottom: 0;
+  animation: none; }
+
+.p-geotherma-deco1 {
+  left: 20%;
+  top: 0;
+  animation-name: smoke01;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-direction: alternate; }
+  .p-geotherma-deco1 img {
+    width: 100%; }
+
+@keyframes smoke01 {
+  0% {
+    top: 0;
+    width: 10vw; }
+  100% {
+    top: -20px;
+    width: 13vw; } }
+.p-geotherma-deco2 {
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  z-index: 3;
+  left: 0;
+  bottom: -200px; }
+  .p-geotherma-deco2.is-float {
+    transition: bottom 2s linear;
+    bottom: 50px; }
+
+@keyframes smoke02 {
+  0% {
+    opacity: 1; }
+  90% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.p-geotherma-deco3 {
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  z-index: 3;
+  right: 0;
+  bottom: -100px; }
+  .p-geotherma-deco3.is-float {
+    transition: bottom 2s linear;
+    bottom: 50px; }
+
+@keyframes smoke03 {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.p-bio-deco1 {
+  left: 40px;
+  bottom: 60px;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  transform: rotateY(0);
+  transition: transform 0.5s; }
+  .p-bio-deco1.is-turn {
+    transform: rotateY(180deg); }
+
+@keyframes walk01 {
+  0% {
+    left: 40px; }
+  20% {
+    left: 40px; }
+  80% {
+    left: 150px; }
+  100% {
+    left: 150px; } }
+.p-bio-deco2 {
+  z-index: 999;
+  right: 40px;
+  bottom: 20px;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  transform: rotateY(0);
+  transition: transform 0.5s; }
+  .p-bio-deco2.is-turn {
+    transform: rotateY(180deg); }
+
+@keyframes walk02 {
+  0% {
+    right: 40px; }
+  20% {
+    right: 40px; }
+  80% {
+    right: 120px; }
+  100% {
+    right: 120px; } }
+.p-water-deco {
+  left: 40px;
+  bottom: 50px;
+  animation-name: round-rotate;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+@keyframes round-rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(-360deg); } }
+.p-solar-deco1 {
+  left: 56px;
+  top: 90px;
+  width: 40px;
+  height: 94px; }
+
+.p-solar-deco2 {
+  left: 120px;
+  top: 90px;
+  width: 44px;
+  height: 92px; }
+
+.p-solar-deco3 {
+  left: 140px;
+  top: 70px;
+  width: 80px;
+  height: 64px; }
+
+.p-solar-deco1,
+.p-solar-deco2,
+.p-solar-deco3 {
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-name: shine;
+  overflow: hidden; }
+  .p-solar-deco1 img,
+  .p-solar-deco2 img,
+  .p-solar-deco3 img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0; }
+
+@keyframes shine {
+  0% {
+    height: 0; }
+  80% {
+    height: 94px; }
+  100% {
+    height: 94px; } }
+.p-om-deco {
+  bottom: 0;
+  right: -10px;
+  animation-name: check;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate; }
+
+@keyframes check {
+  0% {
+    bottom: 0; }
+  20% {
+    bottom: 0; }
+  80% {
+    bottom: -50px; }
+  100% {
+    bottom: -50px; } }
+.p-h2-deco01 {
+  bottom: 94px;
+  right: 103px;
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate; }
+
+@keyframes flash {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.p-h2-deco-inner {
+  position: absolute;
+  z-index: 1;
+  width: 72px;
+  height: 88px;
+  left: 25px;
+  top: 87px;
+  overflow: hidden; }
+
+.p-h2-deco02 {
+  left: 0;
+  animation-name: drop1;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: normal; }
+
+@keyframes drop1 {
+  0% {
+    top: -100%; }
+  50% {
+    top: 15%; }
+  80% {
+    top: 15%; }
+  100% {
+    top: 100%; } }
+.p-h2-deco03 {
+  left: 45px;
+  animation-name: drop2;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+  animation-timing-function: ease;
+  animation-direction: normal; }
+
+@keyframes drop2 {
+  0% {
+    top: -100%; }
+  50% {
+    top: 50%; }
+  80% {
+    top: 50%; }
+  100% {
+    top: 100%; } }
+.p-oversea-deco-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  animation-name: around-the-world;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+.p-oversea-deco {
+  top: 10px;
+  left: 50px; }
+
+@keyframes around-the-world {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+/* BUSINESS END */
+@media screen and (max-width: 767px) {
+  /* BUSINESS BEGIN */
+  .p-business li {
+    padding-top: 5vw; }
+    .p-business li + li {
+      margin-top: 10vw; }
+  .p-business .m-btn {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    .p-business .m-btn a {
+      display: block; }
+
+  .p-business-img {
+    width: 100%;
+    text-align: center !important; }
+    .p-business-img img {
+      width: 50vw; }
+
+  .p-business-content {
+    width: 100%;
+    margin-top: 5vw; }
+
+  .p-business-right {
+    float: none;
+    text-align: left; }
+
+  .p-business-left {
+    float: none; }
+
+  .p-business-title {
+    font-size: 5.33333vw;
+    margin-bottom: 3vw;
+    text-align: center; }
+
+  .p-business-btn a {
+    padding: 3vw 10vw; }
+    .p-business-btn a span {
+      padding-right: 8vw; }
+
+  .p-business-deco img {
+    width: 100%; }
+
+  .p-geotherma-deco4 {
+    bottom: 0; }
+
+  .p-geotherma-deco1 {
+    left: 25%; }
+
+  @keyframes smoke01 {
+    0% {
+      top: 0;
+      width: 25vw; }
+    100% {
+      top: -20px;
+      width: 35vw; } }
+  .p-geotherma-deco2 {
+    bottom: -40vw;
+    width: 30vw;
+    bottom: -40vw; }
+    .p-geotherma-deco2.is-float {
+      bottom: 10vw; }
+
+  @keyframes smoke02 {
+    0% {
+      opacity: 1; }
+    90% {
+      opacity: 0; }
+    100% {
+      opacity: 0; } }
+  .p-geotherma-deco3 {
+    bottom: -10vw;
+    width: 20vw;
+    bottom: -15vw; }
+    .p-geotherma-deco3.is-float {
+      bottom: 10vw; }
+
+  @keyframes smoke03 {
+    0% {
+      opacity: 1; }
+    90% {
+      opacity: 0; }
+    100% {
+      opacity: 0; } }
+  .p-bio-deco1 {
+    bottom: 10vw;
+    width: 15vw; }
+
+  @keyframes walk01 {
+    0% {
+      left: 5vw; }
+    20% {
+      left: 5vw; }
+    75% {
+      left: 25vw; }
+    100% {
+      left: 25vw; } }
+  .p-bio-deco2 {
+    bottom: 5vw;
+    width: 20vw; }
+
+  @keyframes walk02 {
+    0% {
+      right: 5vw; }
+    20% {
+      right: 5vw; }
+    75% {
+      right: 22vw; }
+    100% {
+      right: 22vw; } }
+  .p-water-deco {
+    width: 18vw;
+    left: 8vw;
+    bottom: 10vw; }
+
+  .p-solar-deco1 {
+    left: 11vw;
+    top: 15vw;
+    width: 6vw; }
+
+  .p-solar-deco2 {
+    left: 20vw;
+    top: 15vw;
+    width: 6vw; }
+
+  .p-solar-deco3 {
+    left: 24vw;
+    top: 12.5vw;
+    width: 11vw; }
+
+  .p-solar-deco1,
+  .p-solar-deco2,
+  .p-solar-deco3 {
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    overflow: hidden; }
+    .p-solar-deco1 img,
+    .p-solar-deco2 img,
+    .p-solar-deco3 img {
+      position: absolute;
+      z-index: 1; }
+
+  @keyframes shine {
+    0% {
+      height: 0; }
+    80% {
+      height: 15vw; }
+    100% {
+      height: 15vw; } }
+  .p-om-deco {
+    width: 30vw; }
+
+  @keyframes check {
+    0% {
+      bottom: 1vw; }
+    20% {
+      bottom: 1vw; }
+    80% {
+      bottom: -8vw; }
+    100% {
+      bottom: -8vw; } }
+  .p-h2-deco01 {
+    width: 5.5vw;
+    bottom: 16vw;
+    right: 17.5vw; }
+
+  .p-h2-deco-inner {
+    width: 12.5vw;
+    height: 15vw;
+    left: 4vw;
+    top: 15vw; }
+
+  .p-h2-deco02 {
+    left: 1vw;
+    width: 6vw; }
+
+  .p-h2-deco03 {
+    left: 8vw;
+    width: 4vw; }
+
+  .p-oversea-deco-cover {
+    width: 50vw;
+    height: 50vw; }
+
+  .p-oversea-deco {
+    top: 3vw;
+    left: 10vw;
+    width: 20vw; }
+
+  /* BUSINESS END */ }

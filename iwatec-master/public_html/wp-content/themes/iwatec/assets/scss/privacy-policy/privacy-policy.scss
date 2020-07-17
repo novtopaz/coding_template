@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@import '../common/config';
+
+.l-sidenav{
+	width: 280px;
+}
+
+.l-sidenav-content{
+	width: 900px;
+}
+
+.p-title{
+	@include fz(28);
+	letter-spacing: 0.06em;
+	font-weight: bold;
+	margin-top: 70px;
+}
+
+.p-sub{
+	@include fz(22);
+	letter-spacing: 0.08em;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.p-title{
+		@include spfz(50);
+		margin-top: 5vw;
+	}
+
+	.p-sub{
+		@include spfz(42);
+		margin-top: 4vw;
+		margin-bottom: 1vw;
+	}
+
+}

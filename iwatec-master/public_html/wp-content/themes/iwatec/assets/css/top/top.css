@@ -1,0 +1,1407 @@
+.l-footer {
+  background-color: transparent; }
+
+/* TITLE H2 BEGIN */
+.p-titleH2 {
+  font-size: 4.8rem;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: center;
+  position: relative; }
+
+.p-titleH2-sub {
+  font-size: 1.8rem;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  text-align: center; }
+
+/* TITLE H2 END */
+/* MV BEGIN */
+/* Common Slide */
+.sl-slide-inner,
+.sl-content-slice {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+/* First Slide */
+.demo-1 .bg-1 .sl-slide-inner,
+.demo-1 .bg-1 .sl-content-slice {
+  background-image: url(../../images/top/mv_geotherma.jpg); }
+
+/* First Slide */
+.demo-1 .bg-2 .sl-slide-inner,
+.demo-1 .bg-2 .sl-content-slice {
+  background-image: url(../../images/top/mv_bio.jpg); }
+
+/* First Slide */
+.demo-1 .bg-3 .sl-slide-inner,
+.demo-1 .bg-3 .sl-content-slice {
+  background-image: url(../../images/top/mv_water.jpg); }
+
+/* First Slide */
+.demo-1 .bg-4 .sl-slide-inner,
+.demo-1 .bg-4 .sl-content-slice {
+  background-image: url(../../images/top/mv_solar.jpg); }
+
+/* First Slide */
+.demo-1 .bg-5 .sl-slide-inner,
+.demo-1 .bg-5 .sl-content-slice {
+  background-image: url(../../images/top/mv_h2.jpg); }
+
+/* First Slide */
+.demo-1 .bg-6 .sl-slide-inner,
+.demo-1 .bg-6 .sl-content-slice {
+  background-image: url(../../images/top/mv_om.jpg); }
+
+.sl-slider-link {
+  display: block; }
+
+.slider-logo {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  top: 20%;
+  margin: 0 auto; }
+
+.slider-logo-list {
+  position: relative;
+  text-align: center; }
+  .slider-logo-list li {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 18vw;
+    height: 18vw;
+    margin: 0 auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.1, 0.1);
+    transition: all 0.7s ease; }
+    .slider-logo-list li.logo-current {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1, 1); }
+    .slider-logo-list li a {
+      display: block; }
+
+.slider-logo-list-cover {
+  position: relative; }
+
+.slider-logo-list-txt {
+  position: absolute;
+  z-index: 2;
+  top: -1.2vw;
+  left: -6%;
+  width: 112%; }
+  .slider-logo-list-txt img {
+    width: 100%; }
+
+.slider-logo-list-content {
+  border-radius: 50%;
+  border: 0.8vw solid #FFF;
+  position: relative;
+  overflow: hidden;
+  background-color: #FFF; }
+
+.slider-logo-list-img {
+  width: 100%; }
+
+.slider-logo-list-img-deco {
+  position: absolute;
+  z-index: 1;
+  animation-iteration-count: infinite; }
+
+.slider-logo-geotherma-deco1 {
+  z-index: 9;
+  left: 0;
+  right: 0;
+  bottom: 13%;
+  margin: 0 auto; }
+  .slider-logo-geotherma-deco1 img {
+    width: 11vw; }
+
+.slider-logo-geotherma-deco2 {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation-duration: 4s, 4s, 4s;
+  animation-timing-function: linear;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  animation-name: mv-smoke, mv-resize, mv-fadeout; }
+  .slider-logo-geotherma-deco2 img {
+    width: 100%; }
+
+@keyframes mv-smoke {
+  0% {
+    top: 8vw; }
+  100% {
+    top: -5vw; } }
+@keyframes mv-resize {
+  0% {
+    width: 3vw; }
+  100% {
+    width: 9vw; } }
+@keyframes mv-fadeout {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  85% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.slider-logo-bio-deco1 {
+  left: 10%;
+  bottom: 20%;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  transform: rotateY(0);
+  transition: transform 0.5s; }
+  .slider-logo-bio-deco1.is-turn {
+    transform: rotateY(180deg); }
+  .slider-logo-bio-deco1 img {
+    width: 4vw; }
+
+.slider-logo-bio-deco2 {
+  right: 20%;
+  bottom: 10%;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  transform: rotateY(0);
+  transition: transform 1s; }
+  .slider-logo-bio-deco2.is-turn {
+    transform: rotateY(180deg); }
+  .slider-logo-bio-deco2 img {
+    width: 6vw; }
+
+.slider-logo-bio-deco3 {
+  z-index: 9;
+  left: 16%;
+  bottom: 7%; }
+  .slider-logo-bio-deco3 img {
+    width: 8vw; }
+
+@keyframes walk-mv1 {
+  0% {
+    left: 15%; }
+  20% {
+    left: 15%; }
+  75% {
+    left: 55%; }
+  100% {
+    left: 55%; } }
+@keyframes walk-mv2 {
+  0% {
+    right: 20%; }
+  20% {
+    right: 20%; }
+  75% {
+    right: 45%; }
+  100% {
+    right: 45%; } }
+.slider-logo-water-deco {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 10vw;
+  width: 10vw;
+  animation-name: round-rotate;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+.slider-logo-solar-deco {
+  top: 15%;
+  left: 12%;
+  width: 5vw;
+  animation-name: zoom-mv;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: linear; }
+
+@keyframes zoom-mv {
+  0% {
+    transform: scale(0.8, 0.8); }
+  100% {
+    transform: scale(1.2, 1.2); } }
+.slider-logo-solar-deco02,
+.slider-logo-solar-deco03,
+.slider-logo-solar-deco04 {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: logo_shine;
+  animation-timing-function: linear;
+  overflow: hidden; }
+  .slider-logo-solar-deco02 img,
+  .slider-logo-solar-deco03 img,
+  .slider-logo-solar-deco04 img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%; }
+
+.slider-logo-solar-deco02 {
+  top: 47%;
+  left: 25%;
+  width: 0.6vw; }
+
+.slider-logo-solar-deco03 {
+  top: 44%;
+  left: 35%;
+  width: 3vw; }
+
+.slider-logo-solar-deco04 {
+  top: 37%;
+  left: 45%;
+  width: 5vw; }
+
+@keyframes logo_shine {
+  0% {
+    height: 0; }
+  100% {
+    height: 5vw; } }
+.slider-logo-h2-deco1 {
+  width: 5vw;
+  right: 20%;
+  animation-name: drop1;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: normal; }
+
+.slider-logo-h2-deco2 {
+  width: 3vw;
+  left: 30%;
+  animation-name: drop2;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+  animation-timing-function: ease;
+  animation-direction: normal; }
+
+.slider-logo-om-deco01 {
+  width: 16vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation-name: drone;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-direction: alternate; }
+
+.slider-logo-om-deco02 {
+  width: 7vw;
+  right: 15%;
+  bottom: 10%; }
+
+.slider-content {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  width: 35vw;
+  margin: 0 auto;
+  text-align: center; }
+  .slider-content img {
+    width: 35vw; }
+
+.slider-title-cover {
+  display: none;
+  position: relative;
+  margin-bottom: 0.5vw;
+  overflow: hidden; }
+  .slider-title-cover:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(227, 227, 227, 0.7);
+    transition: width 0.5s; }
+  .slider-title-cover.is-appear:before {
+    width: 100%; }
+  .slider-title-cover.is-appear .slider-title {
+    transform: translate3d(0, 0, 0); }
+
+.slider-title {
+  position: relative;
+  z-index: 5;
+  font-size: 2vw;
+  color: #525252;
+  line-height: 1.2;
+  padding: 0 0.5vw;
+  transition: all 0.3s;
+  transform: translate3d(-100%, 0, 0);
+  transform-origin: left;
+  transition-duration: 1.2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0.8s;
+  transition-property: transform; }
+  .slider-title span {
+    font-size: 2.8vw; }
+
+.slider-sub {
+  font-size: 1.1vw;
+  font-family: 'Hammersmith One', sans-serif;
+  color: #FFF;
+  text-shadow: 3px 3px 9px #000; }
+
+/* MV END */
+/* NEWS BEGIN */
+.p-news {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 0; }
+
+.p-news-inner {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  position: relative; }
+
+.p-news-title-cover {
+  width: 170px; }
+
+.p-news-title {
+  font-size: 2.5rem;
+  font-family: 'Hammersmith One', sans-serif;
+  position: relative;
+  margin-right: 20px; }
+
+.p-news-btn {
+  width: 140px;
+  height: 30px; }
+  .p-news-btn a {
+    display: block;
+    color: inherit;
+    background-color: #FFF;
+    padding: 3px 10px 3px 20px;
+    border: 1px solid #b3b3b3; }
+    .p-news-btn a span {
+      padding-right: 20px;
+      background-image: url(../../images/top/icn_news.png);
+      background-repeat: no-repeat;
+      background-position: right center; }
+
+.p-news-list {
+  padding: 10px 0; }
+  .p-news-list li + li {
+    margin-top: 5px; }
+  .p-news-list li a {
+    color: inherit; }
+
+.p-news-tag {
+  width: 100px;
+  margin-right: 10px;
+  float: left;
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: #e0f0eb; }
+
+.p-news-date {
+  width: 90px;
+  float: left;
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  margin-right: 15px; }
+
+.p-news-txt {
+  width: 415px;
+  float: left; }
+  .p-news-txt a:hover {
+    text-decoration: underline; }
+
+/* NEWS END */
+/* VISION BEGIN */
+.p-vision {
+  background-color: #e0f0eb;
+  padding: 40px 0 60px; }
+
+.p-vision-title {
+  font-size: 4.8rem;
+  font-family: 'Hammersmith One', sans-serif;
+  letter-spacing: 0.08em;
+  color: #aadbce;
+  text-align: center;
+  line-height: 1.2; }
+
+.animate-item {
+  position: relative;
+  top: 30px;
+  opacity: 0;
+  transition: opacity 1s, top 1s; }
+  .animate-item.is-active {
+    opacity: 1;
+    top: 0; }
+
+.p-vision-sub {
+  font-size: 4rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 35px; }
+
+.p-vision-txt {
+  text-align: center; }
+
+.p-vision-green {
+  width: 960px;
+  margin: 0 auto;
+  display: table;
+  margin-top: 35px; }
+
+.p-vision-green-logo,
+.p-vision-green-content {
+  display: table-cell;
+  vertical-align: middle; }
+
+.p-vision-green-logo {
+  width: 270px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 28px 10px; }
+
+.p-vision-green-logo-txt {
+  font-size: 2.6rem;
+  color: #aadbce;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-top: 5px; }
+  .p-vision-green-logo-txt span {
+    font-size: 2.4rem; }
+
+.p-vision-green-content {
+  width: 670px;
+  background-color: #FFF;
+  padding: 28px 25px; }
+
+.p-vision-btn {
+  margin-top: 40px;
+  text-align: center; }
+
+/* VISION END */
+/* SERVICES BEGIN */
+.p-service {
+  padding: 90px 0; }
+
+.p-service-list {
+  text-align: center;
+  font-size: 0;
+  margin-top: 15px; }
+  .p-service-list li {
+    width: 265px;
+    display: inline-block;
+    vertical-align: top; }
+    .p-service-list li:not(:nth-child(4)) {
+      margin-right: 40px; }
+    .p-service-list li:nth-child(n+5) {
+      margin-top: 20px; }
+    .p-service-list li a {
+      height: 365px;
+      display: block;
+      color: inherit;
+      border-radius: 130px 130px 15px 15px;
+      padding: 12px 7px 0; }
+
+.p-service-list-img-cover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%; }
+
+.p-service-list-img img {
+  width: 240px; }
+
+.p-service-list-img-deco {
+  position: absolute;
+  z-index: 1;
+  animation-iteration-count: infinite; }
+
+.p-service-list-txt {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  margin-top: 25px; }
+
+.p-service-list-geotherma {
+  background-color: #edd4d4; }
+
+.p-service-list-bio {
+  background-color: #d4eddd; }
+
+.p-service-list-water {
+  background-color: #d7e6eb; }
+
+.p-service-list-solar {
+  background-color: #f2ecc5; }
+
+.p-service-list-h2 {
+  background-color: #cfecec; }
+
+.p-service-list-om {
+  background-color: #dce2de; }
+
+.p-service-list-oversea {
+  background-color: #dfe4ef; }
+
+.p-service-geotherma-deco1 {
+  z-index: 2;
+  bottom: 13%;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+.p-service-geotherma-deco2 {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation-duration: 4s, 4s, 4s;
+  animation-timing-function: linear;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  animation-name: smoke, resize, fadeout; }
+  .p-service-geotherma-deco2 img {
+    width: 100%; }
+
+@keyframes smoke {
+  0% {
+    top: 105px; }
+  100% {
+    top: -40px; } }
+@keyframes resize {
+  0% {
+    width: 45px; }
+  100% {
+    width: 145px; } }
+@keyframes fadeout {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  85% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+.p-service-bio-deco1 {
+  left: 15%;
+  bottom: 22%;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  transform: rotateY(0);
+  transition: transform 0.5s; }
+  .p-service-bio-deco1.is-turn {
+    transform: rotateY(180deg); }
+
+@keyframes walk1 {
+  0% {
+    left: 15%; }
+  20% {
+    left: 15%; }
+  80% {
+    left: 50%; }
+  100% {
+    left: 50%; } }
+.p-service-bio-deco2 {
+  bottom: 12%;
+  right: 17%;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  transform: rotateY(0);
+  transition: transform 1s; }
+  .p-service-bio-deco2.is-turn {
+    transform: rotateY(180deg); }
+
+@keyframes walk2 {
+  0% {
+    right: 17%; }
+  20% {
+    right: 17%; }
+  80% {
+    right: 45%; }
+  100% {
+    right: 45%; } }
+.p-service-bio-deco3 {
+  left: 17%;
+  bottom: 10%; }
+
+.p-service-water-deco {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 145px;
+  height: 145px;
+  animation-name: round-rotate;
+  animation-duration: 6s;
+  animation-timing-function: linear; }
+
+@keyframes round-rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+.p-service-solar-deco {
+  top: 18%;
+  left: 15%;
+  animation-name: zoom;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: linear; }
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.7, 0.7); }
+  100% {
+    transform: scale(1.1, 1.1); } }
+.p-service-solar-deco02 {
+  top: 49%;
+  left: 24%;
+  width: 11px;
+  height: 63px; }
+
+.p-service-solar-deco03 {
+  top: 46%;
+  left: 36%;
+  width: 48px;
+  height: 47px; }
+
+.p-service-solar-deco04 {
+  top: 34%;
+  left: 44%;
+  width: 78px;
+  height: 29px; }
+
+.p-service-solar-deco02,
+.p-service-solar-deco03,
+.p-service-solar-deco04 {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: shine;
+  animation-timing-function: linear;
+  overflow: hidden; }
+  .p-service-solar-deco02 img,
+  .p-service-solar-deco03 img,
+  .p-service-solar-deco04 img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0; }
+
+@keyframes shine {
+  0% {
+    height: 0; }
+  100% {
+    height: 63px; } }
+.p-service-h2-deco1 {
+  width: 80px;
+  right: 20%;
+  animation-name: drop1;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: normal; }
+
+@keyframes drop1 {
+  0% {
+    top: -100%; }
+  50% {
+    top: 20%; }
+  80% {
+    top: 20%; }
+  100% {
+    top: 100%; } }
+.p-service-h2-deco2 {
+  width: 40px;
+  left: 26%;
+  animation-name: drop2;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+  animation-timing-function: ease;
+  animation-direction: normal; }
+
+@keyframes drop2 {
+  0% {
+    top: -100%; }
+  50% {
+    top: 60%; }
+  80% {
+    top: 60%; }
+  100% {
+    top: 100%; } }
+.p-service-om-deco01 {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 220px;
+  height: 120px;
+  margin: auto;
+  animation-name: drone;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-direction: alternate; }
+
+@keyframes drone {
+  0% {
+    top: 0%; }
+  100% {
+    top: 10%; } }
+.p-service-om-deco02 {
+  width: 80px;
+  right: 16%;
+  bottom: 10%; }
+
+.p-service-oversea-deco {
+  right: 20%;
+  bottom: 20%;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  transition: transform 0.5s; }
+  .p-service-oversea-deco.is-turn {
+    transform: rotate3d(-0.6, 1, 0, 0.5turn); }
+
+@keyframes airplane {
+  0% {
+    right: 20%;
+    bottom: 20%;
+    width: 50px; }
+  100% {
+    right: 30%;
+    bottom: 30%;
+    width: 140px; } }
+/* SERVICES END */
+/* 2COL BEGIN */
+.p-intro {
+  background-color: #faf9ef;
+  padding: 100px 0; }
+
+.p-2col-cover {
+  overflow: hidden; }
+  .p-2col-cover + .p-2col-cover {
+    margin-top: 130px; }
+
+.p-2col {
+  position: relative;
+  width: 80vw; }
+
+.p-2col-right {
+  float: right; }
+  .p-2col-right .p-2col-img {
+    float: right;
+    right: -100%; }
+    .p-2col-right .p-2col-img.is-active {
+      right: 0; }
+    .p-2col-right .p-2col-img:before {
+      left: 0; }
+  .p-2col-right .p-2col-content {
+    left: 0; }
+
+.p-2col-left {
+  float: left; }
+  .p-2col-left .p-2col-img {
+    float: left;
+    left: -100%; }
+    .p-2col-left .p-2col-img.is-active {
+      left: 0; }
+    .p-2col-left .p-2col-img:before {
+      right: 0; }
+  .p-2col-left .p-2col-content {
+    right: 0; }
+
+.p-2col-img {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s;
+  width: 55vw; }
+  .p-2col-img:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: width 1s;
+    transition-delay: 0.5s; }
+  .p-2col-img.is-active:before {
+    width: 0; }
+  .p-2col-img img {
+    width: 100%;
+    min-width: 860px; }
+
+.p-2col-content {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  width: 30vw;
+  min-width: 530px;
+  height: 85%;
+  margin: auto;
+  background-color: #e0f0eb;
+  padding: 50px 2vw 60px 3vw;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  transition-delay: 1.2s; }
+  .p-2col-content.is-active {
+    opacity: 1; }
+  .p-2col-content .p-titleH2 {
+    text-align: left; }
+  .p-2col-content .p-titleH2-sub {
+    text-align: left; }
+
+.p-2col-content-title {
+  margin-bottom: 30px; }
+
+.p-2col-btn {
+  margin-top: 30px; }
+
+/* 2COL END */
+/* RECRUIT BEGIN */
+.p-recruit {
+  margin-top: 50px; }
+
+.p-recruit-inner {
+  display: table; }
+
+.p-recruit-img,
+.p-recruit-content {
+  display: table-cell; }
+
+.p-recruit-content {
+  width: 726px;
+  vertical-align: middle;
+  background-color: #afcdd7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 40px; }
+  .p-recruit-content .p-titleH2 {
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 0;
+    margin-right: 10px; }
+  .p-recruit-content .p-titleH2-sub {
+    display: inline-block; }
+
+.p-recruit-btn {
+  margin-top: 20px; }
+
+/* RECRUIT END */
+/* CONTACT BEGIN */
+.p-contact {
+  margin-top: 80px; }
+
+.p-contact-inner {
+  border-radius: 10px;
+  background-color: #e5f1dd;
+  padding: 50px 120px; }
+
+.p-contact-content {
+  margin-top: 30px; }
+
+.p-contact-mail {
+  float: left; }
+
+.p-contact-tel {
+  float: right;
+  margin-top: 15px; }
+  .p-contact-tel a {
+    pointer-events: none; }
+
+/* CONTACT END */
+@media screen and (max-width: 767px) {
+  /* TITLE H2 BEGIN */
+  .p-titleH2 {
+    font-size: 9.6vw;
+    padding-bottom: 0; }
+
+  .p-titleH2-sub {
+    font-size: 4vw; }
+
+  /* TITLE H2 END */
+  /* MV BEGIN */
+  /* Common Slide */
+  /* First Slide */
+  .demo-1 .bg-1 .sl-slide-inner,
+  .demo-1 .bg-1 .sl-content-slice {
+    background-image: url(../../images/top/mv_geotherma_sp.jpg); }
+
+  /* First Slide */
+  .demo-1 .bg-2 .sl-slide-inner,
+  .demo-1 .bg-2 .sl-content-slice {
+    background-image: url(../../images/top/mv_bio_sp.jpg); }
+
+  /* First Slide */
+  .demo-1 .bg-3 .sl-slide-inner,
+  .demo-1 .bg-3 .sl-content-slice {
+    background-image: url(../../images/top/mv_water_sp.jpg); }
+
+  /* First Slide */
+  .demo-1 .bg-4 .sl-slide-inner,
+  .demo-1 .bg-4 .sl-content-slice {
+    background-image: url(../../images/top/mv_solar_sp.jpg); }
+
+  /* First Slide */
+  .demo-1 .bg-5 .sl-slide-inner,
+  .demo-1 .bg-5 .sl-content-slice {
+    background-image: url(../../images/top/mv_h2_sp.jpg); }
+
+  /* First Slide */
+  .demo-1 .bg-6 .sl-slide-inner,
+  .demo-1 .bg-6 .sl-content-slice {
+    background-image: url(../../images/top/mv_om_sp.jpg); }
+
+  .slider-logo {
+    top: 15%; }
+
+  .slider-logo-list li {
+    width: 45vw;
+    height: 45vw; }
+
+  .slider-logo-list-txt {
+    top: -3vw; }
+
+  .slider-logo-list-content {
+    border: 1vw solid #FFF; }
+
+  .slider-logo-geotherma-deco1 img {
+    width: 30vw; }
+
+  @keyframes mv-smoke {
+    0% {
+      top: 20vw; }
+    100% {
+      top: -8vw; } }
+  @keyframes mv-resize {
+    0% {
+      width: 9vw; }
+    100% {
+      width: 20vw; } }
+  .slider-logo-bio-deco1 img {
+    width: 10vw; }
+
+  .slider-logo-bio-deco2 img {
+    width: 14vw; }
+
+  .slider-logo-bio-deco3 {
+    left: 15%; }
+    .slider-logo-bio-deco3 img {
+      width: 18vw; }
+
+  @keyframes walk-mv1 {
+    0% {
+      left: 15%; }
+    20% {
+      left: 15%; }
+    75% {
+      left: 55%; }
+    100% {
+      left: 55%; } }
+  @keyframes walk-mv2 {
+    0% {
+      right: 20%; }
+    20% {
+      right: 20%; }
+    75% {
+      right: 50%; }
+    100% {
+      right: 50%; } }
+  .slider-logo-water-deco {
+    height: 20vw;
+    width: 20vw; }
+
+  .slider-logo-solar-deco {
+    width: 10vw; }
+
+  @keyframes zoom-mv {
+    0% {
+      transform: scale(0.8, 0.8); }
+    100% {
+      transform: scale(1.1, 1.1); } }
+  .slider-logo-solar-deco02 {
+    width: 1.5vw; }
+
+  .slider-logo-solar-deco03 {
+    width: 7vw; }
+
+  .slider-logo-solar-deco04 {
+    width: 10vw; }
+
+  @keyframes logo_shine {
+    0% {
+      height: 0; }
+    100% {
+      height: 10vw; } }
+  .slider-logo-h2-deco1 {
+    width: 10vw;
+    right: 25%; }
+
+  .slider-logo-h2-deco2 {
+    width: 8vw; }
+
+  .slider-logo-om-deco01 {
+    width: 40vw; }
+
+  .slider-logo-om-deco02 {
+    width: 12vw;
+    right: 15%;
+    bottom: 12%; }
+
+  .slider-content {
+    width: 100%;
+    bottom: 40%;
+    margin: 0 auto; }
+
+  .slider-title-cover {
+    margin-bottom: 2vw; }
+
+  .slider-title {
+    font-size: 5vw;
+    padding: 0 2vw; }
+    .slider-title span {
+      font-size: 7vw; }
+
+  .slider-sub {
+    font-size: 3.2vw; }
+
+  .nav-dots {
+    bottom: 35%;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+    .nav-dots span {
+      display: inline-block;
+      width: 4vw;
+      height: 4vw;
+      border-radius: 50%;
+      background-color: #c1c4c2; }
+      .nav-dots span.nav-dot-current {
+        background-color: #ff834d; }
+      .nav-dots span + span {
+        margin-left: 2vw; }
+      .nav-dots span img {
+        display: none; }
+      .nav-dots span:hover:before {
+        opacity: 0; }
+
+  /* MV END */
+  /* NEWS BEGIN */
+  .p-news {
+    padding: 3vw; }
+
+  .p-news-inner {
+    width: 100%;
+    display: block; }
+
+  .p-news-title-cover {
+    float: none;
+    width: 100%; }
+
+  .p-news-title {
+    float: left;
+    font-size: 7.33333vw;
+    margin-right: 0;
+    line-height: 1.2; }
+
+  .p-news-btn {
+    float: right;
+    width: 35vw;
+    height: 8vw; }
+    .p-news-btn a {
+      padding: 1vw 3vw; }
+      .p-news-btn a span {
+        padding-right: 4vw;
+        background-size: 3vw; }
+
+  .p-news-list {
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin-top: 2vw; }
+    .p-news-list li + li {
+      margin-top: 3vw; }
+
+  .p-news-tag {
+    width: 27vw;
+    margin-right: 3vw;
+    font-size: 3.73333vw; }
+
+  .p-news-date {
+    width: auto;
+    font-size: 3.2vw;
+    margin-right: 0; }
+
+  .p-news-txt {
+    width: 100%;
+    margin-top: 1vw;
+    font-size: 3.46667vw; }
+
+  /* NEWS END */
+  /* VISION BEGIN */
+  .p-vision {
+    padding: 5vw 0; }
+
+  .p-vision-title {
+    font-size: 9.6vw; }
+
+  .p-vision-sub {
+    font-size: 7.46667vw;
+    margin-bottom: 3vw;
+    line-height: 1.3; }
+
+  .p-vision-txt {
+    text-align: left; }
+
+  .p-vision-green {
+    width: 100%;
+    display: block;
+    margin-top: 4vw; }
+
+  .p-vision-green-logo,
+  .p-vision-green-content {
+    display: block; }
+
+  .p-vision-green-logo {
+    width: 100%;
+    padding: 2vw; }
+
+  .p-vision-green-logo-txt {
+    font-size: 5.33333vw;
+    margin-top: 1vw; }
+    .p-vision-green-logo-txt span {
+      font-size: 4.8vw; }
+
+  .p-vision-green-content {
+    width: 100%;
+    padding: 3vw; }
+
+  .p-vision-btn {
+    margin-top: 6vw; }
+
+  /* VISION END */
+  /* SERVICES BEGIN */
+  .p-service {
+    padding: 10vw 0; }
+
+  .p-service-list {
+    margin-top: 3vw;
+    text-align: left; }
+    .p-service-list li {
+      text-align: center;
+      width: 48%;
+      vertical-align: top; }
+      .p-service-list li:not(:nth-child(4)) {
+        margin-right: 0; }
+      .p-service-list li:nth-child(n+5) {
+        margin-top: 0; }
+      .p-service-list li:nth-child(even) {
+        margin-left: 4%; }
+      .p-service-list li:nth-child(n+3) {
+        margin-top: 4vw; }
+      .p-service-list li a {
+        height: 60vw;
+        border-radius: 30vw 30vw 2vw 2vw;
+        padding: 3vw 3vw 0; }
+
+  .p-service-list-txt {
+    font-size: 4.8vw;
+    line-height: 1.2;
+    margin-top: 2vw; }
+
+  .is-eng .p-service-list-txt {
+    font-size: 4vw; }
+
+  .p-service-geotherma-deco1 {
+    width: 25vw; }
+
+  @keyframes smoke {
+    0% {
+      top: 17vw;
+      opacity: 1; }
+    100% {
+      top: -5vw;
+      opacity: 0; } }
+  @keyframes resize {
+    0% {
+      width: 8vw; }
+    100% {
+      width: 16vw; } }
+  .p-service-bio-deco1 {
+    bottom: 22%;
+    width: 10vw; }
+
+  .p-service-bio-deco2 {
+    width: 15vw;
+    bottom: 12%; }
+
+  .p-service-bio-deco3 {
+    width: 16vw; }
+
+  .p-service-water-deco {
+    width: 20vw;
+    height: 20vw; }
+
+  .p-service-solar-deco {
+    width: 8vw; }
+
+  .p-service-solar-deco02 {
+    width: 2vw;
+    height: 15vw; }
+
+  .p-service-solar-deco03 {
+    width: 10vw;
+    height: 10vw; }
+
+  .p-service-solar-deco04 {
+    width: 15vw;
+    height: 8vw; }
+
+  .p-service-solar-deco02,
+  .p-service-solar-deco03,
+  .p-service-solar-deco04 {
+    overflow: hidden; }
+    .p-service-solar-deco02 img,
+    .p-service-solar-deco03 img,
+    .p-service-solar-deco04 img {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0; }
+
+  @keyframes shine {
+    0% {
+      height: 0; }
+    100% {
+      height: 15vw; } }
+  .p-service-h2-deco1 {
+    width: 12vw;
+    right: 25%; }
+
+  .p-service-h2-deco2 {
+    width: 8vw;
+    left: 22%; }
+
+  .p-service-om-deco01 {
+    width: 35vw;
+    height: 30vw; }
+
+  .p-service-om-deco02 {
+    width: 12vw; }
+
+  .p-service-oversea-deco {
+    transition: transform 0.4s; }
+
+  @keyframes airplane {
+    0% {
+      right: 20%;
+      bottom: 20%;
+      width: 10vw; }
+    100% {
+      right: 30%;
+      bottom: 30%;
+      width: 22vw; } }
+  /* SERVICES END */
+  /* 2COL BEGIN */
+  .p-intro {
+    padding: 10vw 0; }
+
+  .p-2col-cover + .p-2col-cover {
+    margin-top: 10vw; }
+
+  .p-2col {
+    width: 96%; }
+
+  .p-2col-img {
+    width: 100%;
+    float: none !important; }
+    .p-2col-img img {
+      min-width: 0; }
+
+  .p-2col-content {
+    position: relative;
+    top: 3vw;
+    bottom: auto;
+    width: 92%;
+    min-width: 0;
+    height: auto;
+    padding: 5vw 4vw;
+    margin-top: -10vw;
+    transition: all 0.6s ease;
+    transition-delay: 1s; }
+    .p-2col-content.is-active {
+      top: 0; }
+
+  .p-2col-content-title {
+    margin-bottom: 3vw; }
+
+  .p-2col-btn {
+    margin-top: 5vw;
+    text-align: center; }
+
+  /* 2COL END */
+  /* RECRUIT BEGIN */
+  .p-recruit {
+    margin-top: 5vw; }
+
+  .p-recruit-inner {
+    display: block;
+    border-radius: 10px; }
+
+  .p-recruit-img,
+  .p-recruit-content {
+    display: block; }
+
+  .p-recruit-content {
+    width: 100%;
+    background-color: #afcdd7;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 5vw; }
+    .p-recruit-content .p-titleH2 {
+      margin-right: 2vw; }
+
+  .p-recruit-btn {
+    margin-top: 3vw;
+    text-align: center; }
+
+  /* RECRUIT END */
+  /* CONTACT BEGIN */
+  .p-contact {
+    margin-top: 8vw; }
+
+  .p-contact-inner {
+    background-color: #e5f1dd;
+    padding: 8vw 4vw; }
+
+  .p-contact-content {
+    margin-top: 3vw; }
+
+  .p-contact-mail {
+    float: none; }
+
+  .p-contact-tel {
+    float: none;
+    margin-top: 3vw; }
+    .p-contact-tel a {
+      pointer-events: auto; }
+
+  /* CONTACT END */ }

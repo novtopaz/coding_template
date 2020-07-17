@@ -1,0 +1,206 @@
+@charset "UTF-8";
+.l-sidenav {
+  width: 150px; }
+
+.l-sidenav-content {
+  width: 1030px; }
+
+.p-work {
+  margin-top: 90px; }
+
+.p-work-inner + .p-work-inner {
+  margin-top: 60px; }
+
+.p-work-title {
+  font-size: 2.2rem;
+  color: #ff4e00;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  margin-bottom: 20px; }
+
+.p-work-sub {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-bottom: 15px; }
+
+.p-work-list {
+  font-size: 0; }
+  .p-work-list li {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    font-weight: 500;
+    vertical-align: top; }
+    .p-work-list li:not(:nth-child(3n)) {
+      margin-right: 5%; }
+    .p-work-list li:nth-child(n+4) {
+      margin-top: 30px; }
+
+.p-work-item-img {
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  height: 166px; }
+  .p-work-item-img:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.3s;
+    opacity: 0; }
+  .p-work-item-img:hover:before {
+    opacity: 1; }
+  .p-work-item-img:hover .p-work-item-desc {
+    opacity: 1;
+    margin-top: 0; }
+  .p-work-item-img img {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    max-height: 170px; }
+
+.p-work-item-desc {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px 5px;
+  opacity: 0;
+  margin-top: 10px;
+  transition: opacity 0.3s, margin-top 0.3s; }
+
+.p-work-item-desc-txt {
+  font-size: 1.6rem;
+  letter-spacing: 0.08em; }
+
+.p-work-item-title-cover {
+  margin-top: 10px; }
+
+.p-work-wellness {
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  margin-top: 30px; }
+  .p-work-wellness li:before {
+    content: "・"; }
+  .p-work-wellness li + li {
+    margin-top: 5px; }
+  .p-work-wellness span {
+    display: inline-block; }
+
+.p-work-wellness-place {
+  width: 85px; }
+
+.p-work-wellness-type {
+  width: 85px; }
+
+.is-eng .p-work-wellness-place {
+  width: 150px; }
+.is-eng .p-work-wellness-type {
+  width: 170px; }
+
+.p-work-box {
+  border: 1px solid #b3b3b3;
+  padding: 40px;
+  margin-top: 30px;
+  position: relative; }
+
+.p-work-box-txt {
+  font-size: 1.6rem;
+  line-height: 1.875;
+  letter-spacing: 0.06em; }
+
+.p-work-box-btn {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%; }
+
+@media screen and (max-width: 767px) {
+  .l-sidenav-content {
+    width: 100%; }
+
+  .p-work {
+    margin-top: 12vw; }
+
+  .p-work-inner + .p-work-inner {
+    margin-top: 12vw; }
+
+  .p-work-title {
+    font-size: 5.33333vw;
+    margin-bottom: 3vw; }
+
+  .p-work-sub {
+    font-size: 4.53333vw;
+    margin-bottom: 2vw; }
+
+  .p-work-list li {
+    display: table;
+    width: 100%;
+    text-align: left; }
+    .p-work-list li:not(:nth-child(3n)) {
+      margin-right: 0%; }
+    .p-work-list li:nth-child(n+4), .p-work-list li + li {
+      margin-top: 6vw; }
+
+  .p-work-item-img {
+    display: table-cell;
+    width: 50%;
+    height: 28vw; }
+    .p-work-item-img img {
+      max-height: 28vw; }
+
+  .p-work-item-title-cover {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    padding-left: 5%; }
+
+  .p-work-item-desc-txt {
+    font-size: 3.2vw;
+    margin-top: 1vw; }
+
+  .p-work-wellness {
+    font-size: 3.46667vw;
+    margin-top: 3vw; }
+    .p-work-wellness li + li {
+      margin-top: 1vw; }
+
+  .p-work-wellness-place {
+    width: 17vw; }
+
+  .p-work-wellness-type {
+    width: 17vw; }
+
+  .is-eng .p-work-wellness {
+    font-size: 2.66667vw; }
+  .is-eng .p-work-wellness-place {
+    width: 30%; }
+  .is-eng .p-work-wellness-type {
+    width: 33%; }
+
+  .p-work-box {
+    padding: 4.5vw 4vw;
+    margin-top: 5vw; }
+
+  .p-work-box-btn {
+    width: 25vw; }
+
+  .p-work-box-txt {
+    font-size: 3.46667vw;
+    line-height: 1.5; } }

@@ -1,0 +1,30 @@
+// imgPath
+$img_path: '../../images';
+$img_path3: '../../../images';
+
+// color
+$base_color: #525252;
+$base_bg_color: #fff;
+
+$color_orange: #ff4e00;
+
+// breakPoint
+$breakpoint: 767;
+
+
+
+// font-size
+@mixin fz($fontSize){
+	font-size: ($fontSize / 10) + rem;
+}
+
+// font-size(vw)
+@mixin spfz($fontSizeSp){
+	font-size: ($fontSizeSp / 750*100) + vw;
+}
+
+// Noto Sans JP
+@mixin noto($weight) {
+	font-family: 'Noto Sans JP';
+	font-weight: #{$weight};
+}

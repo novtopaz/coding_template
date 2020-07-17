@@ -1,0 +1,516 @@
+@charset "UTF-8";
+
+@import '../../common/config';
+
+/* INTRO BEGIN */
+.p-intro{
+	position: relative;
+	width: 753px;
+	height: 353px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.p-intro-deco{
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.p-intro-deco-animateDefault{
+	transition-property: all;
+	transition-duration: 1s;
+	opacity: 0;
+
+	&.is-animate{
+		opacity: 1;
+
+		.p-intro-deco{
+			opacity: 1;
+		}
+	}
+
+	&.is-disappear{
+		opacity: 0 !important;
+	}
+}
+
+/* RESOUCE BEGIN */
+.p-intro-deco-resource{
+	top: 0;
+	left: 0;
+}
+
+.p-intro-deco-process{
+	z-index: 2;
+	top: 45%;
+	left: 37%;
+}
+/* RESOUCE END */
+
+/* ENERGY BEGIN */
+.p-intro-deco-energy{
+	left: 0;
+	bottom: 0;
+}
+
+.p-intro-deco-use{
+	left: 51%;
+	bottom: 20%;
+	z-index: 2;
+}
+
+/* ENERGY EMD */
+
+/* UOE BEGIN */
+.p-intro-deco-uoe{
+	right: 0;
+	bottom: 0;
+}
+
+.p-intro-deco-fire{
+	right: 27%;
+	bottom: 5%;
+
+	animation-name: flame;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes flame{
+	0%   { transform: scale(1, 1); }
+	100% { transform: scale(0.8, 0.8); }
+}
+
+.p-intro-deco-bulb{
+	right: 1.95%;
+    bottom: 5.6%;
+
+    img{
+	    animation-name: light;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+    }
+
+}
+
+@keyframes light{
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.p-intro-deco-co2{
+	right: 4%;
+    bottom: 15%;
+    z-index: 2;
+    width: 165px;
+    height: 0;
+    overflow: hidden;
+
+    &.is-animate{
+		height: 240px;
+    }
+
+    img{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+    }
+}
+
+.p-intro-deco-synthesis{
+    bottom: 48%;
+    left: 62%;
+	z-index: 2;
+}
+/* UOE END */
+
+
+/* PHOTOSYSTHESIS BEGIN */
+.p-intro-deco-photosysthesis{
+	top: 0;
+	right: 0;
+}
+
+.p-intro-deco-tree{
+	bottom: 55%;
+	right: 15%;
+	z-index: 2;
+	width: 50px;
+	opacity: 0;
+
+	&.is-animate{
+		opacity: 1;
+		width: 111px;
+		right: 11%;
+	}
+}
+
+.p-intro-deco-o2{
+	top: 12%;
+    right: 18%;
+	z-index: 2;
+
+	img{
+		opacity: 0;
+		transition: opacity 1s;
+	}
+
+	&.is-animate{
+		right: 24%;
+
+		img{
+			opacity: 1;
+		}
+	}
+}
+
+.p-intro-deco-rsc{
+	top: 18%;
+    right: 44%;
+	z-index: 2;
+}
+
+.is-eng{
+	.p-intro-deco-rsc{
+		top: 15%;
+		right: 42.5%;
+	}
+}
+/* PHOTOSYSTHESIS END */
+
+
+/* INTRO END */
+
+.p-box{
+	padding: 30px 50px;
+	background-color: #eef8f5;
+}
+
+.p-box-title{
+	@include fz(18);
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	margin-bottom: 20px;
+}
+
+.p-2col{
+	display: table;
+	width: 100%;
+	background-color: #eef8f5;
+}
+
+.p-2col-img{
+	display: table-cell;
+	width: 320px;
+}
+
+.p-2col-content{
+	display: table-cell;
+	vertical-align: middle;
+
+	.p-box{
+		padding: 20px 30px;
+	}
+}
+
+/* BIOGAS BEGIN */
+.p-biogas{
+	position: relative;
+	width: 747px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.p-biogas-area-digestive{
+	width: 190px;
+	height: 100px;
+	bottom: 10px;
+	left: 150px;
+}
+
+.p-biogas-area-fermenter{
+	width: 140px;
+	height: 70px;
+	left: 165px;
+	top: 110px;
+}
+
+.p-biogas-area-holder{
+	width: 100px;
+	height: 65px;
+	bottom: 170px;
+	left: 325px;
+}
+
+
+.p-biogas-area-food{
+	width: 140px;
+	height: 160px;
+	left: 0;
+	bottom: 40px;
+}
+
+.p-biogas-area-heat{
+	width: 230px;
+	height: 60px;
+	bottom: 0;
+	right: 45px;
+}
+
+.p-biogas-area-engine{
+	width: 150px;
+	height: 90px;
+	top: 50px;
+	right: 145px;
+}
+
+.p-biogas-comment-digestive{
+	left: 160px;
+	bottom: 100px;
+
+	&:before{
+		left: 70px;
+	}
+}
+
+.p-biogas-comment-fermenter{
+	top: 40px;
+	left: 10px;
+
+	&:before{
+		right: 30px;
+	}
+}
+
+.p-biogas-comment-holder{
+	bottom: 120px;
+	left: 300px;
+
+	&:before{
+		left: 70px;
+	}
+}
+
+.p-biogas-comment-food{
+	left: 145px;
+	bottom: 90px;
+
+	&:before{
+		bottom: 10px;
+	}
+}
+
+.p-biogas-comment-heat{
+	bottom: 5px;
+	right: 275px;
+
+	&:before{
+		bottom: 10px;
+	}
+}
+
+.p-biogas-comment-engine{
+	top: 150px;
+	right: 75px;
+
+	&:before{
+		left: 40px;
+	}
+}
+
+.is-eng{
+	.p-biogas-comment-food{
+	    left: 150px;
+	    bottom: 110px;
+	}
+
+	.p-biogas-comment-digestive{
+	    bottom: 130px;
+	}
+
+	.p-biogas-comment-holder{
+	    bottom: 140px;
+	}
+
+	.p-biogas-comment-heat{
+	    bottom: 30px;
+	    right: 280px;
+	}
+}
+
+/* BIOGAS END */
+.p-serviceConsult-cover {
+	.m-serviceConsult-inner{
+		margin-top: 32px;
+	}
+
+	.m-serviceConsult-title {
+		@include fz(22);
+	}
+
+	.m-serviceConsult-box-txt {
+		@include fz(14);
+	}
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	/* INTRO BEGIN */
+	.p-intro{
+		width: 100%;
+		height: 36vw;
+	}
+
+	/* RESOUCE BEGIN */
+	.p-intro-deco-resource{
+		width: 40vw;
+	}
+
+	.p-intro-deco-process{
+		top: 41%;
+		width: 6.6vw;
+	}
+
+	/* RESOUCE END */
+
+	/* ENERGY BEGIN */
+	.p-intro-deco-energy{
+		width: 40vw;
+	}
+
+	.p-intro-deco-use{
+		left: 50.5%;
+		width: 4.8vw;
+	}
+
+	/* ENERGY EMD */
+
+	/* UOE BEGIN */
+	.p-intro-deco-uoe{
+		width: 34vw;
+	}
+
+	.p-intro-deco-fire{
+		width: 10vw;
+	}
+
+	.p-intro-deco-bulb{
+		right: 1.8%;
+		width: 6vw;
+	}
+
+	.p-intro-deco-co2{
+	    width: 16vw;
+
+	    &.is-animate{
+			height: 23vw;
+	    }
+	}
+
+	.p-intro-deco-synthesis{
+		bottom: 47%;
+		width: 8vw;
+	}
+	/* UOE END */
+
+
+	/* PHOTOSYSTHESIS BEGIN */
+	.p-intro-deco-photosysthesis{
+		width: 34vw;
+	}
+
+	.p-intro-deco-tree{
+		bottom: 56%;
+		width: 5vw;
+
+		&.is-animate{
+			width: 10vw;
+		}
+	}
+
+	.p-intro-deco-o2{
+		width: 14.5vw;
+	}
+
+	.p-intro-deco-rsc{
+		right: 43%;
+		width: 5vw;
+	}
+	/* PHOTOSYSTHESIS END */
+
+	.is-eng{
+		.p-intro-deco-process{
+			top: 39%;
+		}
+
+		.p-intro-deco-synthesis{
+			width: 11vw;
+		}
+	}
+
+	/* INTRO END */
+
+	.p-box{
+		padding: 5vw 3vw;
+	}
+
+	.p-box-title{
+		@include spfz(36);
+		text-align: center;
+		margin-bottom: 3vw;
+	}
+
+	.p-2col{
+		display: block;
+	}
+
+	.p-2col-img{
+		display: block;
+		width: 100%;
+	}
+
+	.p-2col-content{
+		display: block;
+
+		.p-box{
+			padding: 5vw 3vw;
+		}
+	}
+
+	.p-biogas{
+		width: 100%;
+	}
+
+	.m-serviceConsult-content{
+		background-size: 100% 55vw;
+	}
+
+	.m-serviceConsult-left,
+	.m-serviceConsult-right{
+		padding-top: 5vw;
+	}
+
+	.m-serviceConsult-center{
+		margin-top: 4vw;
+	}
+	
+	.p-serviceConsult-cover {
+		.m-serviceConsult-inner{
+			margin-top: 4.5vw;
+		}
+
+		.m-serviceConsult-title {
+			@include spfz(35);
+		}
+
+		.m-serviceConsult-box-txt {
+			@include spfz(14);
+		}
+	}
+}
+

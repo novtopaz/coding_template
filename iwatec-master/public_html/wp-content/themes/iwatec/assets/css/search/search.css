@@ -1,0 +1,26 @@
+.l-pageBody {
+  padding-top: 20px; }
+
+.l-breadcrumbs {
+  margin-top: 0; }
+
+.p-lead {
+  margin-top: 10px; }
+  .p-lead span {
+    font-weight: bold; }
+
+.p-search-list {
+  margin: 50px 0; }
+  .p-search-list li {
+    padding-top: 25px;
+    border-top: 1px solid #ccc; }
+    .p-search-list li + li {
+      margin-top: 25px; }
+    .p-search-list li strong {
+      font-weight: bold; }
+
+.p-search-list-ttle {
+  margin-bottom: 5px; }
+
+.p-search-list-link {
+  margin-top: 10px; }

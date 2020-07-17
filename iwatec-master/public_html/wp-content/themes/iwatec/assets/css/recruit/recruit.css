@@ -1,0 +1,154 @@
+.p-listPeople {
+  margin-left: 130px;
+  font-size: 0; }
+  .p-listPeople li {
+    position: relative;
+    display: inline-block; }
+    .p-listPeople li + li {
+      margin-left: 150px; }
+
+.p-listPeople-txt {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+.p-title {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-top: 55px;
+  margin-bottom: 25px; }
+
+.p-txtMini {
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  margin-top: 10px; }
+
+.p-table {
+  margin-top: 35px;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6; }
+  .p-table tr {
+    border-top: 1px solid #e6e6e6; }
+    .p-table tr th, .p-table tr td {
+      padding-top: 25px;
+      padding-bottom: 25px; }
+    .p-table tr th {
+      width: 150px;
+      padding-left: 10px;
+      text-align: left;
+      font-weight: 500; }
+
+.p-table-half {
+  display: flex; }
+
+.p-table-half-item {
+  width: 50%; }
+
+.p-table-title {
+  font-weight: bold;
+  letter-spacing: 0.1em; }
+
+.p-table-head span {
+  width: 80px;
+  display: inline-block; }
+
+.p-table-head-en span {
+  width: 105px; }
+
+.p-contact-cover {
+  background-color: #FFF;
+  padding: 40px 0 80px; }
+
+.p-contact {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #fbe5d6;
+  border-radius: 10px;
+  padding: 35px 0 50px;
+  text-align: center; }
+
+.p-contact-title {
+  font-size: 3.2rem;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  margin-bottom: 12px; }
+
+.p-contact-txt {
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 25px; }
+
+@media screen and (max-width: 767px) {
+  .p-listPeople {
+    margin-left: 0;
+    padding: 0 5vw; }
+    .p-listPeople li {
+      display: block; }
+      .p-listPeople li + li {
+        margin-left: 0;
+        margin-top: 6vw; }
+
+  .p-listPeople-txt {
+    font-size: 4.8vw;
+    text-align: center;
+    margin-bottom: 3vw; }
+
+  .p-title {
+    font-size: 4.8vw;
+    text-align: center;
+    margin-top: 10vw;
+    margin-bottom: 2vw; }
+
+  .p-txtMini {
+    font-size: 3.73333vw;
+    margin-top: 1vw; }
+
+  .p-table {
+    margin-top: 5vw; }
+    .p-table tr th, .p-table tr td {
+      display: block;
+      padding-top: 5vw;
+      padding-bottom: 6vw; }
+    .p-table tr th {
+      width: 100%;
+      padding-left: 0;
+      padding-bottom: 0;
+      font-size: 4.8vw;
+      text-align: center; }
+
+  .p-table-half {
+    display: block; }
+
+  .p-table-half-item {
+    width: 100%; }
+    .p-table-half-item + .p-table-half-item {
+      margin-top: 5vw; }
+
+  .p-table-title {
+    font-size: 4.8vw; }
+
+  .p-table-head + .p-table-head {
+    margin-top: 4vw; }
+  .p-table-head span {
+    width: 100%;
+    display: block; }
+
+  .p-contact-cover {
+    background-color: transparent;
+    padding: 0;
+    margin-top: 10vw; }
+
+  .p-contact {
+    width: 100%;
+    border-radius: 5px;
+    padding: 6vw 5vw 8vw; }
+
+  .p-contact-title {
+    font-size: 4.8vw;
+    margin-bottom: 3vw; }
+
+  .p-contact-txt {
+    font-size: 4vw;
+    margin-bottom: 5vw; } }
