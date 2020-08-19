@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@import "../common/config";
+
+/* フォントサイズ
+---------------------------------------------------------------------------- */
+$i: 50;
+@while $i > 5 {
+	.fs#{$i} {
+		font-size: #{$i}px !important;
+		font-size: #{$i / 10}rem !important;
+	}
+	$i: $i - 1;
+}
+@media screen and (max-width: #{$breakpoint}px){
+	$i: 50;
+	@while $i > 5 {
+		.spfs#{$i} {
+			font-size: #{$i}px !important;
+			font-size: #{$i / 10}rem !important;
+		}
+		$i: $i - 1;
+	}
+}
+
+/* clearfix
+---------------------------------------------------------------------------- */
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/* テキスト
+---------------------------------------------------------------------------- */
+.tal{
+	text-align: left !important;
+}
+.tac{
+	text-align: center !important;
+}
+.tar{
+	text-align: right !important;
+}
+.fwb{
+	font-weight: bold !important;
+}
+
+/* フロート
+---------------------------------------------------------------------------- */
+.flR{
+	float: right !important;
+}
+.flL{
+	float: left !important;
+}
+
+/* フロート PCのみ */
+.flL-pc{
+  float: left;
+}
+
+.flR-pc{
+  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .flL-pc,
+  .flR-pc{
+    float: none;
+  }
+}
+
+
+/* マージン
+---------------------------------------------------------------------------- */
+$i: 100;
+@while $i > -5 {
+	.mt#{$i} {
+		margin-top: #{$i}px !important;
+	}
+	.mb#{$i} {
+		margin-bottom: #{$i}px !important;
+	}
+	.ml#{$i} {
+		margin-left: #{$i}px !important;
+	}
+	.mr#{$i} {
+		margin-right: #{$i}px !important;
+	}
+	$i: $i - 5;
+}
+@media screen and (max-width: #{$breakpoint}px){
+	$i: 100;
+	@while $i > -5 {
+		.spmt#{$i} {
+			margin-top: #{$i}px !important;
+		}
+		.spmb#{$i} {
+			margin-bottom: #{$i}px !important;
+		}
+		.spml#{$i} {
+			margin-left: #{$i}px !important;
+		}
+		.spmr#{$i} {
+			margin-right: #{$i}px !important;
+		}
+		$i: $i - 5;
+	}
+}
+
+/* パディング
+---------------------------------------------------------------------------- */
+$i: 100;
+@while $i > -5 {
+	.pt#{$i} {
+		padding-top: #{$i}px !important;
+	}
+	.pb#{$i} {
+		padding-bottom: #{$i}px !important;
+	}
+	.pl#{$i} {
+		padding-left: #{$i}px !important;
+	}
+	.pr#{$i} {
+		padding-right: #{$i}px !important;
+	}
+	$i: $i - 5;
+}
+@media screen and (max-width: #{$breakpoint}px){
+	$i: 100;
+	@while $i > -5 {
+		.sppt#{$i} {
+			padding-top: #{$i}px !important;
+		}
+		.sppb#{$i} {
+			padding-bottom: #{$i}px !important;
+		}
+		.sppl#{$i} {
+			padding-left: #{$i}px !important;
+		}
+		.sppr#{$i} {
+			padding-right: #{$i}px !important;
+		}
+		$i: $i - 5;
+	}
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.m-imgFull{
+		width: 100%;
+	}
+}

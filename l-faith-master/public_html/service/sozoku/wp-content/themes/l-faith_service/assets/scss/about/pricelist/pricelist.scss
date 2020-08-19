@@ -1,0 +1,543 @@
+@charset "UTF-8";
+
+@import "../../common/config";
+.m-mv-content{
+	left: 89px;
+}
+
+.p-price-title {
+	padding: 0 15px 10px 25px;
+	border-bottom: 1px solid #989895;
+	font-size: 2.8rem;
+	letter-spacing: 0.04em;
+	font-weight: 500;
+	position: relative;
+	
+	&::before {
+		display: inline-block;
+		content: "";
+		width: 2px;
+		height: 26px;
+		background-color: #d21708;
+		position: absolute;
+		top: 0;
+		bottom: 15px;
+		left: 8px;
+		margin: auto;
+	}
+	
+	.p-price-subtitle {
+		@include fz(22);
+		line-height: 3.14;
+	}
+}
+
+.p-price-box {
+	width: 590px;
+	float: left;
+	
+	&:first-child {
+		margin-right: 20px;
+	}
+}
+
+.p-price-layout {
+	padding: 70px 0 65px;
+}
+
+.p-price-list {
+	
+	li {
+		padding: 20px 0 20px 30px;
+		display: inline-block;
+		font-size: 1.8rem;
+		letter-spacing: 0.04em;
+		font-weight: 500;
+		position: relative;
+		
+		&::after {
+			display: inline-block;
+			content: "";
+			height: 10px;
+			width: 10px;
+			background-color: #d21708;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 8px;
+			margin: auto;
+		}
+		
+		& + li {
+			margin-right: 30px;
+		}
+	}
+	
+	a {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+	}
+	
+	a:hover {
+		color: #d21708;
+		text-decoration: underline;
+	}
+} 
+
+.p-l-layout {
+	padding: 80px 0;
+	background-image: url(#{$imgPathThird}about/pricelist/bg_service.png);
+	background-position: left top;
+	background-repeat: repeat;
+}
+
+.is-spplan-btn {
+	display: none;
+	margin-top: 10/750*100vw;
+	padding: 20/750*100vw 77/750*100vw;
+	background-color: #fff;
+	background-image: url(#{$imgPathThird}about/pricelist/bg_arrow_down.png);
+	background-size: 42/750*100vw auto;
+	background-position: right 30/750*100vw center;
+	background-repeat: no-repeat;
+	border-left: 4px solid $red;
+	border-bottom: 2px solid #989895;
+	@include spfz(48);
+	line-height: 1.42;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+	user-select: none;
+}
+
+.p-spplan-btnmin {
+	@include spfz(40);
+	line-height: 1.7;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+}
+
+.is-spplan-btn.is-open-spplan {
+	background-image: url(#{$imgPathThird}about/pricelist/bg_arrow_up.png);
+}
+
+.p-plan {
+	margin-top: 80px;
+	padding: 60px 100px;
+	background-color: #fff;
+}
+
+.p-plan-title {
+	font-size: 3.8rem;
+	line-height: 1.45;
+	letter-spacing: 0.04em;
+	font-weight: 500;
+	text-align: center;
+	position: relative;
+	
+	&::before {
+		display: inline-block;
+		content: "";
+		height: 2px;
+		width: 40px;
+		background-color: $red;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 350px;
+		margin: auto;
+	}
+	
+	&::after {
+		display: inline-block;
+		content: "";
+		height: 2px;
+		width: 40px;
+		background-color: $red;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 350px;
+		right: 0;
+		margin: auto;
+	}
+}
+
+.p-plan-sub {
+	margin: 65px 0 20px;
+	padding-left: 27px;
+	@include noto(500);
+	font-size: 2.2rem;
+	line-height: 2.5;
+	letter-spacing: 0.04em;
+	color: #d21708;
+	position: relative;
+	
+	&::before {
+		display: inline-block;
+		content: "";
+		width: 17px;
+		height: 4px;
+		background-color: $red;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+	}
+}
+
+.p-plan-subtitle {
+	@include noto(500);
+	font-size: 2.2rem;
+	letter-spacing: 0.04em;
+}
+
+.p-plan-table01 {
+	width: auto;
+	margin: 20px 0;
+	@include noto(500);
+	border: 1px solid #989895;
+	border-bottom: none;
+	text-align: center;
+	vertical-align: middle;
+	
+	th {
+		padding: 10px 20px;
+		vertical-align: middle;
+		font-size: 1.8rem;
+		letter-spacing: 0.04em;
+		background-color: #e3c0bd;
+		border-bottom: 1px solid #989895;
+	}
+	
+	th:not(:last-child) {
+		border-right: 1px solid #fff;
+	}
+	
+	td {
+		padding: 10px 20px;
+		vertical-align: middle;
+		font-size: 1.6rem;
+		background-color: #f7f7f7;
+		border-bottom: 1px solid #989895;
+	}
+	
+	td:not(:last-child) {
+		border-right: 1px solid #989895;
+	}
+}
+
+	.p-plan-table03 {
+		width: 100%;
+	
+	.p-table03-red {
+		background-color: #f9e9e5;
+	}
+
+	.p-plan-bold {
+		font-weight: bold;
+		border-bottom: none;
+	}
+	
+	.p-plan-border {
+		border-bottom: 1px solid #989895;
+	}
+}
+
+.p-plan-text {
+	padding-left: 1em;
+	text-indent: -1em;
+	@include noto(400);
+	font-size: 1.6rem;
+	line-height: 1.5;
+	letter-spacing: 0.08em;
+}
+
+.p-individual-title {
+	font-size: 3.8rem;
+	line-height: 1.45;
+	letter-spacing: 0.04em;
+	text-align: center;
+	position: relative;
+	
+	&::before {
+		display: inline-block;
+		content: "";
+		height: 2px;
+		width: 40px;
+		background-color: #d21708;
+		position: absolute;
+		top: 25px;
+		left: 0;
+		right: 260px;
+		margin: auto;
+	}
+	
+	&::after {
+		display: inline-block;
+		content: "";
+		height: 2px;
+		width: 40px;
+		background-color: #d21708;
+		position: absolute;
+		top: 25px;
+		left: 260px;
+		right: 0;
+		margin: auto;
+	}
+}
+
+.p-individual-min {
+	font-size: 2.7rem;
+	line-height: 2.04;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+}
+
+.p-individual-table {
+	margin: 20px 0;
+	border: 1px solid #989895;
+	text-align: center;
+
+	tr {
+		border: 1px solid #989895;
+	}
+	
+	th {
+		padding: 10px 20px;
+		text-align: center;
+		vertical-align: middle;
+		@include noto(500);
+		font-size: 1.6rem;
+		letter-spacing: 0.04em;
+		border-right: 1px solid #989895;
+		background-color: #f7f7f7;
+//		position: relative;
+	}
+
+	td {
+		padding: 10px 20px;
+		text-align: center;
+		vertical-align: middle;
+		@include noto(500);
+		font-size: 1.6rem;
+		letter-spacing: 0.04em;
+		border-right: 1px solid #989895;
+	}
+	
+	.p-table-line {
+		padding: 0;
+	}
+	
+	.p-line-box {
+		position: relative;
+		width: 100%;
+		height: 100%
+	}
+	
+	.p-line-box img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	
+	.p-table-tac {
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	.p-table-mid {
+		vertical-align: middle;
+	}
+	
+	.p-table-bor {
+		border-right-color: #989895;
+	}
+	
+	.p-individual-red {
+		font-size: 1.8rem;
+		text-align: center;
+		background-color: #e3c0bd;
+	}
+	
+	.p-individual-red:not(:last-child) {
+		border-right-color: #fff;
+	}
+
+	.p-individual-vertical {
+		line-height: 1.5;
+	}
+}
+
+.p-fee-text {
+	padding-left: 110px;
+	@include noto(500);
+	font-size: 1.8rem;
+	letter-spacing: 0.04em;
+	position: relative;
+	
+	&::before {
+			display: inline-block;
+			content: "";
+			height: 1px;
+			width: 100px;
+			background-color: #333;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.m-mv-content{
+		left: 0;
+	}
+	
+	.p-price {
+		display: none;
+	}
+	
+	.p-l-layout {
+		padding: 100/750*100vw 0;
+	}
+	
+	.is-spplan-btn {
+		display: block;
+		cursor: pointer;
+		user-select: none;
+	}
+	
+	.is-spplan-content {
+		display: none;
+	}
+
+	.p-plan {
+		margin-top: 0;
+		padding: 60/750*100vw 30/750*100vw;
+	}
+	
+	.p-plan-title {
+		@include spfz(48);
+		line-height: 1.42;
+
+		&::before {
+			height: 4/750*100vw;
+			width: 60/750*100vw;
+			left: -450/750*100vw;
+			right: 0;
+		}
+
+		&::after {
+			height: 4/750*100vw;
+			width: 60/750*100vw;
+			left: 420/750*100vw;
+		}
+	}
+	
+	.p-plan-sub {
+		margin: 80/750*100vw 0 30/750*100vw;
+		padding-left: 77/750*100vw;
+		@include spfz(38);
+		line-height: 1.45;
+
+		&::before {
+			width: 34/750*100vw;
+			height: 8/750*100vw;
+		}
+	}
+	.p-plan-subtitle {
+		@include spfz(38);
+	}
+
+	.p-plan-scroll {
+		margin-bottom: 40/750*100vw;
+	}
+	
+	.p-plan-table01 {
+		width: 100%;
+		margin: 30/750*100vw 0 40/750*100vw;
+
+		th {
+			padding: 20/750*100vw 40/750*100vw;
+			@include spfz(36);
+		}
+
+		td {
+			padding: 20/750*100vw 40/750*100vw;
+			@include spfz(32);
+		}
+	}
+	
+	.p-plan-text {
+		@include spfz(32);
+	}
+	
+	.p-individual-title {
+		@include spfz(48);
+		line-height: 1.42;
+	
+		&::before {
+			height: 4/750*100vw;
+			width: 60/750*100vw;
+			top: 30/750*100vw;
+			left: 0;
+			right: 350/750*100vw;
+		}
+
+		&::after {
+			height: 4/750*100vw;
+			width: 60/750*100vw;
+			top: 30/750*100vw;
+			left: 320/750*100vw;
+			right: 0;
+		}
+	}
+	
+	.p-individual-min {
+		@include spfz(40);
+	}
+
+	.p-individual-table {
+		margin: 30/750*100vw 0 40/750*100vw;
+
+		th {
+			padding: 30/750*100vw 40/750*100vw;
+			@include spfz(36);
+		}
+
+		td {
+			padding: 30/750*100vw 40/750*100vw;
+			@include spfz(36);
+		}
+		
+		.p-individual-red {
+			@include spfz(38);
+		}
+	}
+	
+	.p-fee-text {
+		padding-top: 30/750*100vw;
+		padding-left: 252/750*100vw;
+		@include spfz(35.78);
+
+		&::before {
+				height: 2/750*100vw;
+				width: 200/750*100vw;
+				top: 0;
+				bottom: 0;
+				left: 0;
+			}
+	}
+	
+	.p-plan-scroll {
+		overflow-x: scroll;
+		white-space: nowrap;
+	}
+	
+}

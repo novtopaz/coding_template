@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@import "../common/config";
+
+/* ファーストビュー
+---------------------------------------------------------------------------- */
+.l-pagebody{
+	background-image: url(../../images/jobs/img_mv_pc.jpg);
+}
+@media screen and (max-width: #{$breakpoint}px){
+	.l-pagebody{
+		background-image: url(../../images/jobs/img_mv_sp.jpg);
+	}
+}
+
+/* コンテンツ
+---------------------------------------------------------------------------- */
+.p-lead-txt{
+	text-align: center;
+	font-size: 2.0rem;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	margin-bottom: 40px;
+}
+
+.p-box-wrap{
+	margin-bottom: 75px;
+}
+.p-box{
+	width: 475px;
+	float: left;
+	border: 1px solid $beige;
+
+	&:nth-of-type(2n){
+		float: right;
+	}
+
+	&:nth-of-type(n+3){
+		margin-top: 30px;
+	}
+}
+.p-cat-mh{
+	color: #fff;
+	background-color: $beige;
+	font-size: 3.2rem;
+	line-height: 1.25;
+	padding: 30px;
+	border: 1px solid $beige;
+	border-bottom: none;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: contain;
+}
+.p-cat01{
+	background-image: url(../../images/jobs/img_cat_01.jpg);
+}
+.p-cat02{
+	background-image: url(../../images/jobs/img_cat_02.jpg);
+}
+.p-cat03{
+	background-image: url(../../images/jobs/img_cat_03.jpg);
+}
+.p-cat04{
+	background-image: url(../../images/jobs/img_cat_04.jpg);
+}
+.p-list{
+	padding: 0 30px 30px;
+
+	li{
+		border-bottom: 1px solid $beige;
+		margin-top: 10px;
+	}
+	a{
+		padding: 20px 0 20px 30px;
+		color: $black;
+		font-size: 1.8rem;
+		position: relative;
+		display: block;
+		text-decoration: none;
+		@include noto(400);
+		background-image: url(../../images/common/icn_arrow_right_beige.svg);
+		background-repeat: no-repeat;
+		background-position: right 20px top 58%;
+		background-size: 25px;
+
+		&:before{
+			display: block;
+			content: "";
+			width: 12px;
+			height: 12px;
+			background-color: $beige;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+}
+@media screen and (max-width: #{$breakpoint}px){
+	.p-lead-txt{
+		text-align: left;
+		@include spfz(34);
+		line-height: 1.76;
+		margin-bottom: 90/750*100vw;
+	}
+
+	.p-box-wrap{
+		margin-bottom: 100/750*100vw;
+	}
+	.p-box{
+		width: 100%;
+		float: none;
+
+		&:nth-of-type(2n){
+			float: none;
+		}
+
+		& + &{
+			margin-top: 40/750*100vw;
+		}
+		&:nth-of-type(n+3){
+			margin-top: 40/750*100vw;
+		}
+	}
+	.p-cat-mh{
+		@include spfz(42);
+		padding: 50/750*100vw 4vw;
+	}
+	.p-list{
+		padding: 0 4vw 40/750*100vw;
+
+		li{
+			margin-top: 0;
+		}
+
+		a{
+			padding: 40/750*100vw 0 40/750*100vw 40/750*100vw;
+			@include spfz(32);
+			background-position: right top 55%;
+			background-size: 40/750*100vw;
+
+			&:before{
+				width: 16/750*100vw;
+				height: 16/750*100vw;
+			}
+		}
+	}
+}
+
+/* 採用の流れ
+---------------------------------------------------------------------------- */
+.p-flow-box-wrap{
+	margin-bottom: 80px;
+}
+.p-flow-box{
+	display: table;
+	width: 100%;
+	position: relative;
+
+	& + &{
+		margin-top: 60px;
+
+		&:before{
+			display: block;
+			content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 17px 35px 0 35px;
+			border-color: $beige transparent transparent transparent;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -38px;
+			margin: auto;
+		}
+	}
+}
+.p-flow-mh{
+	display: table-cell;
+	width: 150px;
+	background-color: $beige;
+	color: #fff;
+	text-align: center;
+	font-size: 2.2rem;
+	padding: 17px 0;
+	line-height: 1;
+	vertical-align: middle;
+
+	span{
+		font-size: 1.6rem;
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+.p-flow-txt{
+	display: table-cell;
+	background-color: #f2f2f2;
+	padding: 0 30px;
+	@include noto(400);
+	font-size: 1.8rem;
+	vertical-align: middle;
+}
+@media screen and (max-width: #{$breakpoint}px){
+	.p-flow-box-wrap{
+		margin-bottom: 80/750*100vw;
+	}
+	.p-flow-box{
+		display: block;
+		width: 100%;
+
+		& + &{
+			margin-top: 95/750*100vw;
+
+			&:before{
+				border-width: 34/750*100vw 70/750*100vw 0 70/750*100vw;
+				top: -8vw;
+			}
+		}
+	}
+	.p-flow-mh{
+		display: block;
+		width: 100%;
+		text-align: left;
+		@include spfz(36);
+		padding: 4vw;
+
+		span{
+			@include spfz(28);
+			display: inline-block;
+			margin-bottom: 0;
+			margin-right: 1.2em;
+		}
+	}
+	.p-flow-txt{
+		display: block;
+		width: 100%;
+		padding: 4vw;
+		font-size: 4vw;
+	}
+}
+
+
+
+
+/* 詳細ページ
+---------------------------------------------------------------------------- */

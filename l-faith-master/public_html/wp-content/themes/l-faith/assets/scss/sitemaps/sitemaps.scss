@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import "../common/config";
+
+/* ファーストビュー
+---------------------------------------------------------------------------- */
+.l-pagebody{
+	background-image: url(../../images/sitemaps/bg_mv_pc.jpg);
+}
+@media screen and (max-width: #{$breakpoint}px){
+	.l-pagebody{
+		background-image: url(../../images/sitemaps/bg_mv_sp.jpg);
+	}
+}
+
+/* コンテンツ
+---------------------------------------------------------------------------- */
+.p-content {
+	width: 310px;
+	margin: 0 25px 40px 0;
+	float: left;
+
+	&:nth-of-type(3n){
+		margin-right: 0;
+	}
+}
+
+.p-content-title {
+	font-size: 1.8rem;
+	line-height: 1.56;
+
+	a {
+		display: block;
+		padding: 15px 20px;
+		background: $beige url(../../images/common/icn_arrow_right.svg) no-repeat right 15px center / 30px auto;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.p-content-sub {
+	margin-top: 2px;
+	font-size: 1.6rem;
+	line-height: 1.75;
+	background-color: #f2f2f2;
+	position: relative;
+
+	&:before {
+		display: block;
+		content: "";
+		width: 10px;
+		height: 1px;
+		background-color: $beige;
+		position: absolute;
+		left: 18px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	a {
+		display: block;
+		padding: 13px 20px 13px 40px;
+		color: $beige;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: #{$breakpoint}px) {
+	.p-content {
+		width: 100%;
+		margin: 0 25/750*100vw 40/750*100vw 0;
+		float: none;
+	}
+
+	.p-content-title {
+		@include spfz(32);
+
+		a {
+			padding: 20/750*100vw 30/750*100vw;
+		}
+	}
+
+	.p-content-sub {
+		margin-top: 4/750*100vw;
+		@include spfz(30);
+
+		&:before {
+			width: 20/750*100vw;
+			left: 4vw;
+			height: 2px;
+		}
+
+		a {
+			padding: 20/750*100vw 30/750*100vw 20/750*100vw 70/750*100vw;
+		}
+
+	}
+}

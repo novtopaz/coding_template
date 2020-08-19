@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+@import "../../common/config";
+
+/* ファーストビュー
+---------------------------------------------------------------------------- */
+.l-pagebody{
+	background-image: url(../../../images/jobs/img_mv_pc.jpg);
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.l-pagebody{
+		background-image: url(../../../images/jobs/img_mv_sp.jpg);
+	}
+	.l-h1-wrap {
+		padding: 3.75vw 0;
+	}
+}
+
+/* 仕事を知る
+---------------------------------------------------------------------------- */
+.p-lead-mh{
+	text-align: center;
+	font-size: 3.2rem;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.p-lead-txt{
+	text-align: center;
+	font-size: 2.0rem;
+}
+
+.p-left-box{
+	width: 490px;
+	float: left;
+}
+.p-body-mh{
+	color: $beige;
+	font-size: 2.2rem;
+	padding-bottom: 12px;
+	margin-bottom: 15px;
+}
+.p-body-txt{
+	font-size: 1.6rem;
+	@include noto(400);
+	line-height: 2;
+	letter-spacing: 0.08em;
+}
+
+.p-right-box{
+	width: 455px;
+	float: right;
+}
+.p-schedule-list{
+	position: relative;
+	padding: 15px 0 0;
+
+	&:before{
+		display: block;
+		content: "";
+		width: 2px;
+		height: 100%;
+		background-color: #dcc3a6;
+		position: absolute;
+		left: 8px;
+		top: 0;
+	}
+
+	li{
+		padding-left: 30px;
+	}
+}
+.p-time{
+	color: $red;
+	font-size: 1.8rem;
+	display: inline-block;
+	width: 76px;
+	position: relative;
+
+	&:before{
+		display: block;
+		content: "";
+		width: 18px;
+		height: 18px;
+		background-image: url(../../../images/recruit/work/icn_time.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		left: -30px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+}
+.p-schedule{
+	display: inline-block;
+	font-size: 1.8rem;
+}
+.p-schedule-txt{
+	font-size: 1.5rem;
+	line-height: 1.67;
+	padding: 7px 0 15px 80px;
+	@include noto(400);
+}
+
+.p-entry-btn{
+	width: 490px;
+	float: left;
+	text-align: center;
+	margin-top: 30px;
+
+	a{
+		display: block;
+		width: 310px;
+		margin: 0 auto;
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.8rem;
+		padding: 15px 60px;
+		background-color: $red;
+		background-image: url(../../../images/common/icn_arrow_right.svg);
+		background-repeat: no-repeat;
+		background-position: right 25px center;
+		background-size: 30px;
+		border-radius: 5px;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.p-lead-mh{
+		text-align: left;
+		@include spfz(46);
+		margin-bottom: 25/750*100vw;
+	}
+	.p-lead-txt{
+		text-align: left;
+		@include spfz(34);
+		line-height: 1.76;
+	}
+
+	.p-left-box{
+		width: 100%;
+		float: none;
+	}
+	.p-body-mh{
+		@include spfz(36);
+		padding-bottom: 3.5vw;
+		margin-bottom: 4vw;
+	}
+	.p-body-txt{
+		@include spfz(30);
+		line-height: 1.6;
+	}
+
+	.p-right-box{
+		width: 100%;
+		float: none;
+		margin-top: 45/750*100vw;
+	}
+	.p-schedule-list{
+		padding: 4vw 0 0;
+
+		&:before{
+			left: 15/750*100vw;
+		}
+
+		li{
+			padding-left: 50/750*100vw;
+		}
+	}
+	.p-time{
+		@include spfz(30);
+		width: 112/750*100vw;
+
+		&:before{
+			width: 4vw;
+			height: 4vw;
+			left: -50/750*100vw;
+		}
+	}
+	.p-schedule{
+		@include spfz(32);
+	}
+	.p-schedule-txt{
+		@include spfz(28);
+		padding: 10/750*100vw 0 50/750*100vw 120/750*100vw;
+	}
+
+	.p-entry-btn{
+		width: 100%;
+		float: none;
+		margin-top: 55/750*100vw;
+
+		a{
+			width: 100%;
+			@include spfz(36);
+			padding: 4vw 115/750*100vw;
+			background-position: right 50/750*100vw center;
+			background-size: 64/750*100vw;
+		}
+	}
+}

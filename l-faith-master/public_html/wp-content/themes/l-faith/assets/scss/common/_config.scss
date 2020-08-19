@@ -1,0 +1,22 @@
+$breakpoint : 767;
+
+$black : #333;
+$red : #d21708;
+$beige : #ba874d;
+
+$contents_width : 1120px;
+
+$mincho : 'Noto Serif JP', sans-serif;
+
+@mixin fz($size) {
+	font-size: #{$size}px;
+	font-size: #{$size/10}rem;
+}
+@mixin spfz($size) {
+	font-size: #{$size/750*100}vw;
+}
+
+@mixin noto($size) {
+	font-family: 'Noto Sans JP';
+	font-weight: #{$size};
+}

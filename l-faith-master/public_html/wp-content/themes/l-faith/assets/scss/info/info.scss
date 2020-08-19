@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+@import "../common/config";
+
+/* ファーストビュー
+---------------------------------------------------------------------------- */
+.l-pagebody{
+	background-image: url(../../images/info/img_mv_pc.jpg);
+}
+@media screen and (max-width: #{$breakpoint}px){
+	.l-pagebody{
+		background-image: url(../../images/info/img_mv_sp.jpg);
+	}
+}
+
+/* p-new
+---------------------------------------------------------------------------- */
+.p-new {
+	width: 745px;
+	float: left;
+}
+
+.p-new-title {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	font-size: 2.8rem;
+	font-weight: 500;
+	color: $beige;
+	border-bottom: 2px solid $beige;
+}
+
+.p-new-content {
+	padding: 30px 0;
+	border-bottom: 1px solid #c0bebe;
+}
+
+.p-new-top {
+	padding-bottom: 10px;
+
+	a {
+		display: block;
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.p-top-text {
+		display: inline-block;
+
+		&:first-child {
+			margin-right: 15px;
+			font-size: 1.6rem;
+			line-height: 1.75;
+			color: $red;
+
+			a {
+				display: block;
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+
+		&:nth-child(n+2) {
+			width: 85px;
+			padding: 2px 0;
+			border: 1px solid $beige;
+			font-size: 1.4rem;
+			text-align: center;
+			color: $beige;
+		}
+
+		&+.p-top-text {
+			margin-left: 10px;
+		}
+}
+
+.p-new-text {
+	font-size: 1.8rem;
+	line-height: 1.56;
+	font-weight: 500;
+
+	a {
+		display: block;
+		color: #333;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.p-new-num {
+	margin-top: 40px;
+	text-align: center;
+
+	.p-num-box+.p-num-box {
+		margin-left: 15px;
+	}
+}
+
+.p-num-box {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid $beige;
+	font-size: 1.8rem;
+	text-align: center;
+	color: $beige;
+
+	a.p-num-current {
+		background-color: $beige;
+		color: #fff;
+		}
+}
+
+.p-sidebar {
+	width: 175px;
+	float: right;
+
+	a {
+		display: block;
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.p-sidebar-category {
+	margin-bottom: 20px;
+}
+
+.p-sidebar-title {
+	padding: 10px 20px 10px 45px;
+	margin-bottom: 3px;
+	font-size: 20px;
+	line-height: 1.4;
+	color: #fff;
+}
+
+.p-category {
+	background: $beige url(../../images/info/icn_cat.png) no-repeat left 20px center / 16px auto;
+}
+
+.p-archive {
+	background: $beige url(../../images/info/icn_archive.png) no-repeat left 20px center / 16px auto;
+}
+
+.p-sidebar-list{
+	li{
+		padding: 10px 20px;
+		background-color: #f2f2f2;
+		font-size: 1.8rem;
+		line-height: 1.56;
+		color: $beige;
+
+		& + li{
+			margin-top: 3px;
+		}
+	}
+}
+
+.p-content-title {
+	font-size: 2.4rem;
+}
+
+
+@media screen and (max-width: #{$breakpoint}px) {
+	.p-new {
+		width: 100%;
+		float: none;
+	}
+
+	.p-new-title {
+		padding-bottom: 20/750*100vw;
+		margin-bottom: 10/750*100vw;
+		@include spfz(42);
+		color: $beige;
+	}
+
+	.p-new-content {
+		padding: 40/750*100vw 0;
+	}
+
+	.p-new-top {
+		padding-bottom: 25/750*100vw;
+	}
+
+	.p-top-text {
+			&:first-child {
+			margin-right: 20/750*100vw;
+			@include spfz(28);
+			line-height: 1.17;
+		}
+
+			&:nth-child(n+2) {
+				width: 135/750*100vw;
+				padding: 3/750*100vw 0;
+				@include spfz(24);
+			}
+
+			&+.p-top-text {
+				margin-left: 10/750*100vw;
+			}
+	}
+
+	.p-new-text {
+		@include spfz(32);
+		line-height: 1.5;
+	}
+
+	.p-new-num {
+		margin: 80/750*100vw 0 100/750*100vw;
+	}
+
+	.p-sidebar {
+		width: 100%;
+		float: none;
+		margin-top: 100/750*100vw;
+	}
+
+	.p-sidebar-category {
+		margin-bottom: 40/750*100vw;
+	}
+
+	.p-sidebar-title {
+		padding: 25/750*100vw 20/750*100vw 25/750*100vw 80/750*100vw;
+		margin-bottom: 3/750*100vw;
+		@include spfz(32);
+		line-height: 1.4;
+	}
+
+	.p-sidebar-list{
+		li{
+			padding: 15/750*100vw 20/750*100vw 15/750*100vw 35/750*100vw;
+			@include spfz(34);
+			line-height: 1.5;
+
+			& + li{
+				margin-top: 3/750*100vw;
+			}
+		}
+	}
+
+	.p-category {
+		background-size: 31/750*100vw auto;
+		background-position: left 35/750*100vw center;
+	}
+
+	.p-archive {
+		background-size: 31/750*100vw auto;
+		background-position: left 35/750*100vw center;
+	}
+
+	.p-content-title {
+		@include spfz(36);
+		line-height: 1.33;
+	}
+}

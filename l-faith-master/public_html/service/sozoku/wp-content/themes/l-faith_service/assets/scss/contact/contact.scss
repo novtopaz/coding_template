@@ -1,0 +1,697 @@
+@charset "UTF-8";
+
+@import "../common/config";
+
+.l-content{
+	margin-top: 70px;
+	width: 980px;
+}
+
+.p-tel{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.p-listStatus{
+	margin-top: 70px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #989895;
+
+	li{
+		float: left;
+		background-color: #EEE;
+		padding: 15px 0;
+		@include fz(18);
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 500;
+		text-align: center;
+		color: #8e1e13;
+		background-repeat: no-repeat;
+		background-position: right center;
+		background-size: contain;
+
+		span{
+			@include fz(23);
+			margin-right: 10px;
+		}
+
+		&:first-child,
+		&:nth-child(2){
+			background-image: url(#{$imgPath}contact/icn_arrow_grey_01.png);
+		}
+
+		&:first-child{
+			width: 350px;
+		}
+
+		&:nth-child(2){
+			width: 330px;
+		}
+
+		&:last-child{
+			width: 300px;
+		}
+
+		&.p-listStatus-grey{
+			background-image: url(#{$imgPath}contact/icn_arrow_grey_02.png);
+		}
+
+		&.is-current{
+			color: #FFF;
+			background-color: #8e1e13;
+
+			&:first-child,
+			&:nth-child(2){
+				background-image: url(#{$imgPath}contact/icn_arrow_red.png);
+			}
+		}
+	}
+}
+
+.p-table-cover{
+	
+}
+
+.p-table{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+
+	th, td{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border: 3px solid #FFF;
+
+	}
+
+	th{
+		width: 340px;
+		padding-left: 30px;
+		padding-right: 30px;
+		background-color: #EEE;
+
+		p{
+			@include fz(18);
+			text-align: left;
+			position: relative;
+
+			&:before{
+				content: "";
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				right: 0;
+				width: 55px;
+				height: 25px;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+
+			&.p-required{
+				&:before{
+					background-image: url(#{$imgPath}contact/icn_required.png);
+				}
+			}
+
+			&.p-optional{
+				&:before{
+					background-image: url(#{$imgPath}contact/icn_optional.png);
+				}
+			}
+		}
+
+		span{
+			@include fz(14);
+		}
+	}
+
+	td{
+		@include fz(16);
+		padding-left: 50px;
+		padding-right: 50px;
+		background-color: #f8f8f8;
+	}
+
+	input[type=text]{
+		height: 34px;
+		width: 100%;
+		border: 1px solid #d0d0d0;
+		padding: 0 10px;
+		@include fz(14);
+		font-family: 'Noto Sans JP', sans-serif;
+	}
+
+	label{
+		@include fz(18);
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		display: inline-block;
+
+		input{
+			margin-right: 5px;
+		}
+	}
+
+	textarea{
+		resize: none;
+		padding: 10px;
+		@include fz(14);
+		font-family: 'Noto Sans JP', sans-serif;
+		width: 100%;
+	}
+
+}
+
+.p-table-listName{
+	font-size: 0;
+
+	li{
+		width: 200px;
+		display: inline-block;
+
+		&:first-child{
+			margin-right: 15px;
+		}
+
+		span{
+			display: block;
+			@include fz(16);
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight: 400;
+			color: #8a8a8a;
+			margin-bottom: 3px;
+		}
+	}
+}
+
+.p-table-listVertical{
+	li{
+		&:not(:last-child){
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.p-table-listSide{
+	margin-bottom: 20px;
+
+	li{
+		display: inline-block;
+
+		&:not(:last-child){
+			margin-right: 20px;
+		}
+	}
+}
+
+.p-privacy{
+	@include fz(16);
+	font-family: 'Noto Sans JP', sans-serif;
+	text-align: center;
+	margin-top: 40px;
+
+	a{
+		color: #d21708;
+	}
+}
+
+.p-btn-cover{
+	position: relative;
+	margin-top: 50px;
+}
+
+.p-nextBtn{
+	margin: 25px auto 0;
+	text-align: center;
+
+	input{
+		width: 350px;
+		padding: 15px 0;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-family: 'Noto Serif Japanese', serif;
+		font-weight: 400;
+		@include fz(18);
+		color: #FFF;
+		background-color: $red;
+		background-image: url(#{$imgPath}contact/btn_next_arrow.png);
+		background-repeat: no-repeat;
+		background-position: 85% center;
+	}
+
+}
+
+.p-backBtn{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 150px;
+	text-align: center;
+
+	input{
+		width: 100%;
+		border: none;
+		background-color: #a9a9a9;
+		@include fz(16);
+		color: #FFF;
+		letter-spacing: 0.01em;
+		border-radius: 5px;
+		padding: 10px 0;
+		cursor: pointer;
+		background-image: url(#{$imgCommonPath}/icn_btn_arrowBack_white.png);
+		background-repeat: no-repeat;
+		background-position: 20px center;
+	}
+
+}
+
+.p-thanks-box{
+	background-color: #f8f8f8;
+	padding: 40px 0;
+}
+
+.p-thanks-box-txt{
+	@include fz(20);
+	text-align: center;
+}
+
+.p-thanks-box-btn{
+	width: 350px;
+	margin: 30px auto 0;
+
+	a{
+		background-color: #FFF;
+		border-radius: 10vw;
+		padding: 15px 0;
+
+		span{
+			@include fz(18);
+			letter-spacing: 0.1em;
+		}
+	}
+}
+
+
+.l-footer{
+	margin-top: 120px;
+	border-top: none;
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.l-content{
+		width: 92%;
+		margin-top: 30px;
+	}
+
+	.p-listStatus{
+		margin-top: 30px;
+		margin-bottom: 6vw;
+		padding-bottom: 6vw;
+
+		li{
+			padding: 2vw;
+			@include spfz(30);
+
+			span{
+				@include spfz(28);
+				margin-right: 0;
+			}
+
+			em{
+				text-align: left;
+				display: inline-block;
+			}
+
+			&:first-child{
+				width: 40%;
+			}
+
+			&:nth-child(2){
+				width: 35%;
+			}
+
+			&:last-child{
+				width: 25%;
+			}
+		}
+	}
+
+	.p-table{
+
+		th, td{
+			display: block;
+			width: 100%;
+			border: 2px solid #FFF;
+			padding: 3vw;
+
+		}
+
+		th{
+
+			p{
+				@include spfz(32);
+
+				&:before{
+					width: 12vw;
+					height: 6vw;
+				}
+			}
+
+			span{
+				@include spfz(32);
+			}
+		}
+
+		input[type=text]{
+			height: 10vw;
+			padding: 0 3vw;
+			@include spfz(30);
+		}
+
+		label{
+			@include spfz(30);
+			display: block;
+
+			span{
+				width: 90%;
+				float: right;
+			}
+
+			input{
+				width: 5vw;
+				margin-right: 5px;
+				float: left;
+			}
+		}
+
+		textarea{
+			@include spfz(30);
+		}
+
+	}
+
+	.p-table-listName{
+		li{
+			width: 47%;
+
+			&:first-child{
+				margin-right: 6%;
+			}
+
+			span{
+				@include spfz(30);
+			}
+		}
+	}
+
+	.p-table-listSide{
+		margin-bottom: 20px;
+
+		li{
+			width: 45%;
+			display: inline-block;
+
+			&:not(:last-child){
+				margin-right: 0;
+			}
+
+			&:nth-child(n+3){
+				margin-top: 5px;
+			}
+
+			label{
+
+				span{
+					float: none;
+					width: auto;
+				}
+			}
+		}
+	}
+
+	.p-privacy{
+		@include spfz(30);
+		margin-top: 3vw;
+		text-align: left;
+
+		input{
+			width: 5vw;
+			float: left;
+		}
+
+		span{
+			width: 90%;
+			float: right;
+		}
+
+	}
+
+	.p-nextBtn{
+		margin: 8vw auto 0;
+
+		input{
+			width: 100%;
+			padding: 3vw 0;
+			@include spfz(36);
+		}
+
+	}
+
+	.p-backBtn{
+		position: relative;
+		width: 50%;
+		margin: 20px auto 0;
+
+		input{
+			padding: 10px 0;
+			@include spfz(30);
+			padding-left: 5vw;
+		}
+	}
+
+	.p-thanks-box{
+		padding: 10vw 8vw;
+	}
+
+	.p-thanks-box-txt{
+		@include spfz(40);
+		text-align: left;
+	}
+
+	.p-thanks-box-btn{
+		width: 100%;
+		margin: 7vw auto 0;
+
+		a{
+			border-radius: 10vw;
+			padding: 3vw 0;
+
+			span{
+				@include spfz(32);
+			}
+		}
+	}
+
+
+	.l-footer{
+		margin-top: 12vw;
+	}
+}
+
+
+
+
+
+/* VALIDATE */
+/* Z-INDEX */
+$popupBg: #d21708;
+$popupTextColor: #FFF;
+$borderColor: #FFF;
+$borderWidth: 1px;
+$popupFontSize: 12px;
+$popupRadius: 0;
+$popupShadowWidth: 2px;
+$popupShadowColor: #333;
+
+/* Z-INDEX */
+ .formError { z-index: 990; }
+    .formError .formErrorContent { z-index: 991; }
+    .formError .formErrorArrow { z-index: 996; }
+
+    .ui-dialog .formError { z-index: 5000; }
+    .ui-dialog .formError .formErrorContent { z-index: 5001; }
+    .ui-dialog .formError .formErrorArrow { z-index: 5006; }
+
+
+
+
+.inputContainer {
+	position: relative;
+	float: left;
+}
+
+.formError {
+	position: absolute;
+	top: 300px;
+	left: 300px;
+	display: block;
+	cursor: pointer;
+	text-align: left;
+}
+
+.formError.inline {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+}
+
+.ajaxSubmit {
+	padding: 20px;
+	background: #55ea55;
+	border: 1px solid #999;
+	display: none;
+}
+
+.formError .formErrorContent {
+	width: 100%;
+	background: $popupBg;
+	position:relative;
+	color: $popupTextColor;
+	min-width: 120px;
+	font-size: $popupFontSize;
+	border: $borderWidth solid $borderColor;
+	box-shadow: 0 0 $popupShadowWidth $popupShadowColor;
+	-moz-box-shadow: 0 0 $popupShadowWidth $popupShadowColor;
+	-webkit-box-shadow: 0 0 $popupShadowWidth $popupShadowColor;
+	-o-box-shadow: 0 0 $popupShadowWidth $popupShadowColor;
+	padding: 4px 10px 4px 10px;
+	border-radius: $popupRadius;
+	-moz-border-radius: $popupRadius;
+	-webkit-border-radius: $popupRadius;
+	-o-border-radius: $popupRadius;
+}
+
+.formError.inline .formErrorContent {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	border: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+}
+
+.greenPopup .formErrorContent {
+	background: #33be40;
+}
+
+.blackPopup .formErrorContent {
+	background: #393939;
+	color: #FFF;
+}
+
+.formError .formErrorArrow {
+	width: 15px;
+	margin: -2px 0 0 13px;
+	position:relative;
+}
+body[dir='rtl'] .formError .formErrorArrow,
+body.rtl .formError .formErrorArrow {
+	margin: -2px 13px 0 0;
+}
+
+.formError .formErrorArrowBottom {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	margin: 0px 0 0 12px;
+	top:2px;
+}
+
+.formError .formErrorArrow div {
+	border-left: $borderWidth solid $borderColor;
+	border-right: $borderWidth solid $borderColor;
+	box-shadow: 0 ceil($popupShadowWidth/3) ceil($popupShadowWidth/2) lighten($popupShadowColor,10%);
+	-moz-box-shadow: 0 ceil($popupShadowWidth/3) ceil($popupShadowWidth/2) lighten($popupShadowColor,10%);
+	-webkit-box-shadow: 0 ceil($popupShadowWidth/3) ceil($popupShadowWidth/2) lighten($popupShadowColor,10%);
+	-o-box-shadow: 0 ceil($popupShadowWidth/3) ceil($popupShadowWidth/2) lighten($popupShadowColor,10%);
+	font-size: 0px;
+	height: 1px;
+	background: $popupBg;
+	margin: 0 auto;
+	line-height: 0;
+	font-size: 0;
+	display: block;
+}
+
+.formError .formErrorArrowBottom div {
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+}
+
+.greenPopup .formErrorArrow div {
+	background: #33be40;
+}
+
+.blackPopup .formErrorArrow div {
+	background: #393939;
+	color: #FFF;
+}
+
+.formError .formErrorArrow .line10 {
+	width: 13px;
+	border: none;
+}
+
+.formError .formErrorArrow .line9 {
+	width: 11px;
+	border: none;
+}
+
+.formError .formErrorArrow .line8 {
+	width: 11px;
+}
+
+.formError .formErrorArrow .line7 {
+	width: 9px;
+}
+
+.formError .formErrorArrow .line6 {
+	width: 7px;
+}
+
+.formError .formErrorArrow .line5 {
+	width: 5px;
+}
+
+.formError .formErrorArrow .line4 {
+	width: 3px;
+}
+
+.formError .formErrorArrow .line3 {
+	width: ceil($borderWidth/2);
+	border-left: $borderWidth solid $borderColor;
+	border-right: $borderWidth solid $borderColor;
+	border-bottom: 0 solid $borderColor;
+}
+
+.formError .formErrorArrow .line2 {
+	width: 3px;
+	border: none;
+	background: $borderColor;
+}
+
+.formError .formErrorArrow .line1 {
+	width: 1px;
+	border: none;
+	background: $borderColor;
+}

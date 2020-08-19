@@ -1,0 +1,21 @@
+$breakpoint : 767;
+
+$red : #d21708;
+
+//--- imgPath ---
+$imgCommonPath: "../../images/common/";
+$imgPath: "../../images/";
+$imgPathThird: "../../../images/";
+
+@mixin fz($size) {
+	font-size: #{$size}px;
+	font-size: #{$size/10}rem;
+}
+@mixin spfz($size) {
+	font-size: #{$size/750*100}vw;
+}
+
+@mixin noto($size) {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: #{$size};
+}

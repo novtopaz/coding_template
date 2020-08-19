@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@import "../../common/config";
+
+/* ファーストビュー
+---------------------------------------------------------------------------- */
+.l-pagebody{
+	background-image: url(../../../images/office/img_mv_pc.jpg);
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.l-pagebody{
+		background-image: url(../../../images/office/img_mv_sp.jpg);
+	}
+}
+
+/* アクセス
+---------------------------------------------------------------------------- */
+.p-map{
+	width: 490px;
+	float: left;
+}
+.p-access-box{
+	width: 460px;
+	float: right;
+}
+.p-access-mh{
+	color: $beige;
+	font-size: 2.4rem;
+	letter-spacing: 0.12em;
+	margin-bottom: 5px;
+}
+.p-access-txt{
+	@include noto(400);
+	font-size: 1.6rem;
+	letter-spacing: 0.12em;
+}
+.p-access-station-mh{
+	color: $beige;
+	font-size: 1.8rem;
+	letter-spacing: 0.12em;
+	margin: 20px 0 5px;
+
+	&:before{
+		display: inline-block;
+		content: "■";
+		color: $beige;
+		margin-right: 0.3em;
+		font-size: 0.8em;
+	}
+}
+.p-access-station{
+	li{
+		padding-left: 20px;
+		position: relative;
+
+		&:before{
+			display: block;
+			content: "";
+			width: 10px;
+			height: 1px;
+			background-color: $black;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	}
+}
+
+.p-head-office{
+	display: none;
+
+	&.is-active{
+		display: block;
+	}
+}
+.p-area-btn{
+	margin-top: 30px;
+
+	li{
+		width: 230px;
+		float: left;
+		text-align: center;
+		background-color: #e8e8e8;
+		padding: 3px 3px 0;
+		cursor: pointer;
+		margin: 0 20px 20px 0;
+
+		&:nth-of-type(4n){
+			margin-right: 0;
+		}
+
+		&.is-active{
+			background-color: $beige;
+
+			.p-area-thum img{
+				opacity: 1;
+			}
+			.p-area{
+				color: #fff;
+			}
+		}
+	}
+}
+.p-area-thum{
+	border: 2px solid #fff;
+	background-color: #fff;
+
+	img{
+		opacity: 0.5;
+	}
+}
+.p-area{
+	font-size: 2.0rem;
+	color: $beige;
+	letter-spacing: 0.12em;
+	padding: 8px 0;
+	user-select: none;
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.p-map{
+		width: 100%;
+		float: none;
+		margin-bottom: 40/750*100vw;
+	}
+	.p-access-box{
+		width: 100%;
+		float: none;
+	}
+	.p-access-mh{
+		@include spfz(36);
+		margin-bottom: 10/750*100vw;
+	}
+	.p-access-txt{
+		@include spfz(30);
+	}
+	.p-access-station-mh{
+		@include spfz(32);
+		margin: 4vw 0 10/750*100vw;
+	}
+	.p-access-station{
+		li{
+			padding-left: 35/750*100vw;
+
+			&:before{
+				width: 20/750*100vw;
+				height: 2px;
+			}
+		}
+	}
+
+	.p-area-btn{
+		margin-top: 8vw;
+
+		li{
+			width: 305/630*100%;
+			margin: 0 0 20/750*100vw;
+
+			&:nth-of-type(2n){
+				float: right;
+			}
+
+			& + li{
+				margin: 0 0 20/750*100vw;
+			}
+		}
+	}
+	.p-area{
+		@include spfz(32);
+		padding: 10/750*100vw 0;
+	}
+}

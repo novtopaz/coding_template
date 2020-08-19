@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import "../common/config";
+
+.l-content{
+	padding-top: 50px;
+}
+
+.p-titleH1{
+	@include fz(36);
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.m-txt + .m-txt{
+	margin-top: 20px;
+}
+
+.btn-back{
+	margin-top: 30px;
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.l-content{
+		padding-top: 20px;
+	}
+
+	.p-titleH1{
+		@include spfz(48);
+	}
+
+	.m-txt + .m-txt{
+		margin-top: 10px;
+	}
+
+	.btn-back{
+		margin-top: 20px;
+	}
+}

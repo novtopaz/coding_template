@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@import "../../common/config";
+
+/* ファーストビュー
+---------------------------------------------------------------------------- */
+.l-pagebody{
+	background-image: url(../../../images/office/img_mv_pc.jpg);
+}
+
+@media screen and (max-width: #{$breakpoint}px){
+	.l-pagebody{
+		background-image: url(../../../images/office/img_mv_sp.jpg);
+	}
+}
+
+/* 会社概要
+---------------------------------------------------------------------------- */
+.p-table-text {
+	& + &{
+		margin-top: 35px;
+	}
+}
+
+@media screen and (max-width: #{$breakpoint}px) {
+	.p-table-text {
+		& + &{
+			margin-top: 60/750*100vw;
+		}
+	}
+}

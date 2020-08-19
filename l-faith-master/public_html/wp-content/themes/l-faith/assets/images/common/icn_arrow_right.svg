@@ -1,0 +1,12 @@
+<svg id="icn_arrow_right.svg" xmlns="http://www.w3.org/2000/svg" width="20" height="5" viewBox="0 0 20 5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="シェイプ_3" data-name="シェイプ 3" class="cls-1" d="M1802,783v-0.634h20V783h-20Z" transform="translate(-1802 -778)"/>
+  <path id="シェイプ_3-2" data-name="シェイプ 3" class="cls-1" d="M1816.92,778.447l0.44-.448,4.42,4.489-0.45.449Z" transform="translate(-1802 -778)"/>
+</svg>
